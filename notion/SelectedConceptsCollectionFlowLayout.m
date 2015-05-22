@@ -14,7 +14,7 @@
 {
     if (!(self = [super init])) return nil;
     
-    self.itemSize = CGSizeMake(160.0f, 160.0f);
+    self.itemSize = CGSizeMake(160.0f, 172.0f);
     self.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
     self.minimumInteritemSpacing = 10.0f;
     self.minimumLineSpacing = 10.0f;

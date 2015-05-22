@@ -23,7 +23,6 @@
 - (void) viewDidLoad {
     [controller.view setFrame:self.view.frame];
     [self.view addSubview:controller.view];
-    self.view.backgroundColor = [UIColor redColor];
 }
 
 @end

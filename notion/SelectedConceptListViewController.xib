@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Concepts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYX-Hv-9Nn">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYX-Hv-9Nn">
                     <rect key="frame" x="8" y="33" width="584" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="iFe-33-Rj2"/>
@@ -26,7 +26,7 @@
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bEX-j8-s2h">
                     <rect key="frame" x="0.0" y="79" width="600" height="521"/>
-                    <color key="backgroundColor" red="0.9494949494949495" green="0.19071017398491472" blue="0.10397439169950806" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="y7x-zc-g2P">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -39,7 +39,7 @@
                     </connections>
                 </collectionView>
             </subviews>
-            <color key="backgroundColor" cyan="0.0" magenta="0.0" yellow="0.89512232730263153" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="IYX-Hv-9Nn" secondAttribute="trailing" constant="8" id="71r-Hm-A7s"/>
                 <constraint firstAttribute="trailing" secondItem="bEX-j8-s2h" secondAttribute="trailing" id="DSm-tx-dsq"/>

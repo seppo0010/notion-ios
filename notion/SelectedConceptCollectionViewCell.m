@@ -11,7 +11,6 @@
 @implementation SelectedConceptCollectionViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
 }
 
 @end
