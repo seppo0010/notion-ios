@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectedConceptListViewController">
+            <connections>
+                <outlet property="collectionView" destination="bEX-j8-s2h" id="aAO-xk-EKe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Concepts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYX-Hv-9Nn">
+                    <rect key="frame" x="8" y="33" width="584" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="iFe-33-Rj2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bEX-j8-s2h">
+                    <rect key="frame" x="0.0" y="79" width="600" height="521"/>
+                    <color key="backgroundColor" red="0.9494949494949495" green="0.19071017398491472" blue="0.10397439169950806" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="y7x-zc-g2P">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Bcb-zz-DHL"/>
+                        <outlet property="delegate" destination="-1" id="zDM-Xx-8LD"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" cyan="0.0" magenta="0.0" yellow="0.89512232730263153" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IYX-Hv-9Nn" secondAttribute="trailing" constant="8" id="71r-Hm-A7s"/>
+                <constraint firstAttribute="trailing" secondItem="bEX-j8-s2h" secondAttribute="trailing" id="DSm-tx-dsq"/>
+                <constraint firstAttribute="bottom" secondItem="bEX-j8-s2h" secondAttribute="bottom" id="Mel-kU-Tai"/>
+                <constraint firstItem="IYX-Hv-9Nn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="S4t-1r-6mc"/>
+                <constraint firstItem="bEX-j8-s2h" firstAttribute="top" secondItem="IYX-Hv-9Nn" secondAttribute="bottom" constant="25" id="WVd-mv-kQF"/>
+                <constraint firstItem="bEX-j8-s2h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tl2-hm-BFg"/>
+                <constraint firstItem="IYX-Hv-9Nn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="33" id="usS-Du-81i"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

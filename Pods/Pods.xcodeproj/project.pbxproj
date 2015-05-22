@@ -1,0 +1,1461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00164E0EC347FC24DDBDBE8B /* lua_cmsgpack.c in Sources */ = {isa = PBXBuildFile; fileRef = 393AC6CB873BFC572B60EF79 /* lua_cmsgpack.c */; };
+		00C46182C9C51B61A1FB92E3 /* lualib.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B1E0DFF0D7168BBEC4D82C /* lualib.h */; };
+		047FE1DA62978F50660BEE6E /* NSArray+arrayWithFastEnumeration.h in Headers */ = {isa = PBXBuildFile; fileRef = FCFAA887854B4C493C129D7E /* NSArray+arrayWithFastEnumeration.h */; };
+		05AF8DE809AB9E8BD4BBC3C4 /* hyperloglog.c in Sources */ = {isa = PBXBuildFile; fileRef = 194B673154D254E4F276C272 /* hyperloglog.c */; };
+		07905073A5AF7996A880A5DF /* lcode.h in Headers */ = {isa = PBXBuildFile; fileRef = B08552CF293C778D9C31E879 /* lcode.h */; };
+		0801EFDF0A4C6C2D678DBDAE /* OOCMutableSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F474FF8AEA918FECE1D1D84 /* OOCMutableSet.m */; };
+		085EE2D773DE94E349405BFF /* lzf_c.c in Sources */ = {isa = PBXBuildFile; fileRef = AF590CD85243F7811C5E28D5 /* lzf_c.c */; };
+		087915F0AAE4E4A30B23F479 /* liolib.c in Sources */ = {isa = PBXBuildFile; fileRef = 3D0F310DCCE1D2C263BD0A26 /* liolib.c */; };
+		0908B7B7AA2474F2E3E0225E /* ldblib.c in Sources */ = {isa = PBXBuildFile; fileRef = 70A9D960C4BA51F7AABB122D /* ldblib.c */; };
+		0A7B70C509F9BD83D953AD11 /* OOCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D07E229475BA505D63C84B /* OOCObject.m */; };
+		0C21CB8F97D02E9978AF2C90 /* lgc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D170A96AC1C982DAB392FFA /* lgc.h */; };
+		0CB80C3DE8022DA5910C27E0 /* msgpack.h in Headers */ = {isa = PBXBuildFile; fileRef = 3144E4BBB6ACB9011F108D47 /* msgpack.h */; };
+		0EA0E94C9A59E346DA868CF0 /* NSData+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE0874F48C6C95ECA1319A1 /* NSData+MessagePack.m */; };
+		12B3B8E23556EB8C36A6C01A /* Ohmoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E7ADDB480F9D86F6C3B628 /* Ohmoc.m */; };
+		139CF11CD6F5D55FB7916D8F /* utilfromredis.h in Headers */ = {isa = PBXBuildFile; fileRef = 80CA12C687FFB9355FEE9AF3 /* utilfromredis.h */; };
+		14545E9636F68E8B8535C95E /* NSNull+MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6A31C860ADA4B99391F698 /* NSNull+MessagePack.h */; };
+		146EFAD44F269DD3900E2797 /* ltable.c in Sources */ = {isa = PBXBuildFile; fileRef = D53303EBC62EA3E188D976E6 /* ltable.c */; };
+		171EFC34661447B3DC6D7E49 /* ltable.h in Headers */ = {isa = PBXBuildFile; fileRef = E15457AEEEAC71B1133C7CA3 /* ltable.h */; };
+		172C0DD5AE4EFFBC95C32585 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = C9885655C92774974CD913B6 /* version.c */; };
+		174476B94B2E2AB2E2567030 /* llex.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2CD1524BAD955D66E8FC5E /* llex.h */; };
+		17AAC1DED3A2D59F1AD9548E /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 6783ADE9117590BEFDC3634D /* sha1.h */; };
+		18FB80E11B6B4C040C5379F0 /* lzio.h in Headers */ = {isa = PBXBuildFile; fileRef = 265532F6FB5ECCB00C89A9AD /* lzio.h */; };
+		1B5B9445283D2BC73709281B /* MessagePackParser+Streaming.m in Sources */ = {isa = PBXBuildFile; fileRef = 772D83B0D2FC5186CD2BC530 /* MessagePackParser+Streaming.m */; };
+		1CE5BBEDBC1251AEFE2622D9 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = 66564C11C8A26EA1C33BC9BA /* print.c */; };
+		1E678CCE543E609713A9D815 /* MessagePackParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 22EA6A8B403D7E5A9864D9FD /* MessagePackParser.h */; };
+		1F5BC79D0249FE5F68696584 /* page_list.h in Headers */ = {isa = PBXBuildFile; fileRef = 43038614AA12F386BA4E0BE2 /* page_list.h */; };
+		227D41E6657694F831F69D14 /* OOCException.m in Sources */ = {isa = PBXBuildFile; fileRef = D440226C83DFBBA499CB8619 /* OOCException.m */; };
+		24C9E4C4E5D7B6219059AEE2 /* type_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 850C22EBDFC60D3215A66CBE /* type_hash.c */; };
+		26C8607BE13E26FB420957D1 /* page_key.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA6CE7273DF5D403672CDFE /* page_key.h */; };
+		299181ADFB8F67031B14DD6E /* lobject.c in Sources */ = {isa = PBXBuildFile; fileRef = F5DCDFBABA9EAB4A051BE136 /* lobject.c */; };
+		2AEDB0C10210BF88F2672F55 /* page_long.c in Sources */ = {isa = PBXBuildFile; fileRef = 44DD5D286A4359D8B3BF011D /* page_long.c */; };
+		2D5F6D08E9ED7BBE09F0C79D /* OOCIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CCF196C2D56FD69EFA0603A /* OOCIndex.h */; };
+		2D98D2C4D35B8C0974E98B0C /* NSData+MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = 137070A446CBD6357F8A55F1 /* NSData+MessagePack.h */; };
+		2F6601AB0AFA8BD57E73E726 /* lstate.h in Headers */ = {isa = PBXBuildFile; fileRef = CF32DDA0B8193E5B61E66282 /* lstate.h */; };
+		30F3D4210C6CA603B681E79A /* page_multi_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 68BD3D7499DB44F0499FF9BD /* page_multi_string.c */; };
+		3174C0ED6CB95232140B9B33 /* dump.c in Sources */ = {isa = PBXBuildFile; fileRef = 532305C2238D1F411BF2FB00 /* dump.c */; };
+		32007BED7CCC3E455D7AB0CD /* OOCMissingIDException.m in Sources */ = {isa = PBXBuildFile; fileRef = C77B2DBA14ACAD6121B1E61A /* OOCMissingIDException.m */; };
+		327B7294C4AC2C0CE80F55AE /* OOCIndexNotFoundException.m in Sources */ = {isa = PBXBuildFile; fileRef = 446ADF1D55BDE23E1A2BAE6D /* OOCIndexNotFoundException.m */; };
+		370EC4CEAAEFD19D18993AD0 /* sysdep.h in Headers */ = {isa = PBXBuildFile; fileRef = B8377C439652B52550A6B2EA /* sysdep.h */; };
+		373FA129A08BC3FE3BEF21FE /* rlite.h in Headers */ = {isa = PBXBuildFile; fileRef = 6627E48DAAAAA6F8BD4416AA /* rlite.h */; };
+		37623F0B8CF00582AADB9DA6 /* OOCUniqueIndexViolationException.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB962EACAAAD08E9425DC09 /* OOCUniqueIndexViolationException.m */; };
+		37DD29242A3E6186469D815A /* OhmocAsync.h in Headers */ = {isa = PBXBuildFile; fileRef = 17FD3B1F4E314B5F877F193C /* OhmocAsync.h */; };
+		391395BF552AEEEFBDC69993 /* OOCMutableSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A0861C1F908FC56DB1DB0A0C /* OOCMutableSet.h */; };
+		3A9554FAEEEDE3F17D3EE783 /* strbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 04EA302675BC04C6087B3542 /* strbuf.c */; };
+		3B1FA14D993857E1F67700CA /* OOCdeletelua.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C4DDCAC511EB2D79F34BD5 /* OOCdeletelua.h */; };
+		3C12E92DED81AD92775F29D4 /* lapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 58FD8C6FFF32ECA52B1D28EF /* lapi.c */; };
+		3FE08A0E69D6B3E69A2F3AE5 /* crc64.c in Sources */ = {isa = PBXBuildFile; fileRef = BFCA06053905F7DBDA43143E /* crc64.c */; };
+		40E840DFFA138D6850BAF5ED /* scripting.h in Headers */ = {isa = PBXBuildFile; fileRef = D966B2E69393A077EEB82B34 /* scripting.h */; };
+		41CDA06C889E8292A5AF5AED /* lgc.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B36D2A72FE1CF78FF4D3E1D /* lgc.c */; };
+		41F25CDCA6A7EDD8A599DF49 /* llimits.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DF127C4A72D8E70A2B466F9 /* llimits.h */; };
+		4330FBC5FA3AA27C5286DB8D /* unpack_define.h in Headers */ = {isa = PBXBuildFile; fileRef = B8677BAF4433A95DD92F0156 /* unpack_define.h */; };
+		441402EB85D6DACAA0C8A1D1 /* MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF4C9351A80414E900AE15C /* MessagePack.h */; };
+		450594695EC3043066501D01 /* unpack.c in Sources */ = {isa = PBXBuildFile; fileRef = B143591503FF4AE30AFA0778 /* unpack.c */; };
+		47285D9337FA909B532C62A8 /* type_string.c in Sources */ = {isa = PBXBuildFile; fileRef = 638B0D58E9E8D98CD92B10B4 /* type_string.c */; };
+		48BC9E0218C1D8B22E3D4895 /* lundump.h in Headers */ = {isa = PBXBuildFile; fileRef = 2503A54262C801240CB299E6 /* lundump.h */; };
+		4997DFB6E19F36016BCBB056 /* ltm.h in Headers */ = {isa = PBXBuildFile; fileRef = 17B48DD7E3F6A9206E4C7EAA /* ltm.h */; };
+		4A266AA4C7974FCBAE74508D /* loslib.c in Sources */ = {isa = PBXBuildFile; fileRef = 00194B34F755D6DEB6F2F607 /* loslib.c */; };
+		4C5E67C703B64BF2A66E92D0 /* lzfP.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AF13802F0375E74A7AE89F4 /* lzfP.h */; };
+		4E3ACDAFD8F2A7B510D03F7E /* OOCUnique.h in Headers */ = {isa = PBXBuildFile; fileRef = BA2D70EC61465AA3A54351EC /* OOCUnique.h */; };
+		4EFBBF2BA63E80603C7B263E /* lapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D9E56E4FAD39B6AC687974 /* lapi.h */; };
+		4F904CED9297CB4AA40DB7AE /* lua_struct.c in Sources */ = {isa = PBXBuildFile; fileRef = 34E1BD8D465A34397F8B78CB /* lua_struct.c */; };
+		50357DA45F8AD344AAB2A6E1 /* NSString+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DD0B5C6494CD2D06421959 /* NSString+MessagePack.m */; };
+		510B9B18DDFF51EB64470D6F /* MessagePackPacker.m in Sources */ = {isa = PBXBuildFile; fileRef = 37FF06B38887F165683F1327 /* MessagePackPacker.m */; };
+		5125B7EEDE12E92F07FFA0B3 /* page_btree.c in Sources */ = {isa = PBXBuildFile; fileRef = BE232F3B8F59E89F90B03EAE /* page_btree.c */; };
+		51AE44BA9B3CFAA8B88EE2A6 /* lzf_d.c in Sources */ = {isa = PBXBuildFile; fileRef = 3864376F336DFABE0478CC4E /* lzf_d.c */; };
+		556F618A92CE68D90E6CDAB6 /* OOCUniqueIndexViolationException.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD88D6BD8288D2200B9E356 /* OOCUniqueIndexViolationException.h */; };
+		560A8F7DB096FCBC4ED9DD9D /* hirlite.c in Sources */ = {isa = PBXBuildFile; fileRef = 548ED7DFCA106941DE869158 /* hirlite.c */; };
+		56826123ED73F7280CDCA7B4 /* lstring.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D92B602760CC9DE16F1FCCD /* lstring.c */; };
+		588E98603840AD476F60CD70 /* objectc.c in Sources */ = {isa = PBXBuildFile; fileRef = 74E288DF8BB316C9ACD01587 /* objectc.c */; };
+		5954868CE3AD88F7E8D4C9FE /* pack.h in Headers */ = {isa = PBXBuildFile; fileRef = 42FBE7D54011769457F3CFC8 /* pack.h */; };
+		59613DAB451EB92C4864EED4 /* lmem.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A748C29A533147446B05AF /* lmem.h */; };
+		59E8D2B1E5642339E0664443 /* lfunc.c in Sources */ = {isa = PBXBuildFile; fileRef = A7692FB0DE5BBA06C572A4D5 /* lfunc.c */; };
+		5E33EFBB277DC75ED9DEEE6E /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D4F35AACD4C9B08526BF10D /* lvm.c */; };
+		5F12912184B467B40B7621CA /* zbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = F4BA319D83BCB9D0D65169B8 /* zbuffer.h */; };
+		5F78196B3D441AF51FEA3024 /* ldo.c in Sources */ = {isa = PBXBuildFile; fileRef = 34C0EE783A6D40F494277471 /* ldo.c */; };
+		5F8F471806D73E732B4C56B8 /* sort.c in Sources */ = {isa = PBXBuildFile; fileRef = FAE5527FEFD3A7432CDC4804 /* sort.c */; };
+		5FAF4FD25CD4A31D050147BF /* loadlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 349C8D5083D766BFF482C03E /* loadlib.c */; };
+		6100D41ACF58AF505BD81FAA /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 36564801F889DD5C7942EED1 /* version.h */; };
+		6161230785D273174C317F04 /* ldo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CB1AAD74B3A76A65B876AA9 /* ldo.h */; };
+		62A9E91A4CCB13858BDA4136 /* lauxlib.c in Sources */ = {isa = PBXBuildFile; fileRef = C49F9239FA613241F4BA1422 /* lauxlib.c */; };
+		66D2DDD625D165556E56E8B8 /* OOCSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D175D5C2FC33B5ED8BD2B15B /* OOCSet.m */; };
+		67AFBEB0B0A98D38D21F2E05 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = E6C7FA9B8BF744159656D36E /* sha1.c */; };
+		6806C05D7D5734D868950BFB /* lua.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DDFB613928DCA617EB8F237 /* lua.h */; };
+		68C398F70E634B5694FA2E0F /* Pods-msgpack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E0E7EA2B3640F81446E020 /* Pods-msgpack-dummy.m */; };
+		70D4CCC52D67C22A3B3FFFC0 /* type_list.h in Headers */ = {isa = PBXBuildFile; fileRef = 61464BBCE596CDE681E63027 /* type_list.h */; };
+		730AEB5D4992A5187FC9AD01 /* lstring.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BBF9FC120CEE78448453D68 /* lstring.h */; };
+		74437DA9E8CA717264915FE0 /* page_list.c in Sources */ = {isa = PBXBuildFile; fileRef = D3DFEE1CA0917B0DA234F98A /* page_list.c */; };
+		75F47CC0D7A10009ABB833C1 /* rlite.c in Sources */ = {isa = PBXBuildFile; fileRef = A903FC5FCED045C01AC71237 /* rlite.c */; };
+		76509B6B0E3B0A75A227FA58 /* version_master.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AC8802689C7C8F7125A7F6 /* version_master.h */; };
+		7794C599D98E31CD741DA0DC /* hirlite.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD9097488A2BE97606F32D6 /* hirlite.h */; };
+		77BBB22CF144A0B02C18CBFF /* OOCList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA5EC81FED2674C9F175B09 /* OOCList.m */; };
+		789498FDD925E2219511CD43 /* lstrlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 354E1573F75B9F03863C8EB8 /* lstrlib.c */; };
+		7A010C0127AC796828C585DD /* type_zset.h in Headers */ = {isa = PBXBuildFile; fileRef = 38D701FFDB601C7DF0EA3E76 /* type_zset.h */; };
+		7A249EF104AA8976FDED871B /* NSArray+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = DEBE4C9442D617DC8ACB0C1F /* NSArray+MessagePack.m */; };
+		7B419BC9F0A283B307F46C5C /* lcode.c in Sources */ = {isa = PBXBuildFile; fileRef = 5260A48C89114AF2CB455BB6 /* lcode.c */; };
+		7BC355529CDB27321E8CC006 /* type_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B931336D165B7BBC898C857 /* type_list.c */; };
+		7CA80C0A0F0E603D846B228F /* OOCsavelua.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FAC780F48F2C7B40DC1582B /* OOCsavelua.h */; };
+		7DB05F16299229EDE9D43D3D /* MessagePackParser+Streaming.h in Headers */ = {isa = PBXBuildFile; fileRef = 32A280CB76A01B71858CFB3B /* MessagePackParser+Streaming.h */; };
+		8184B3148927C2BAFF8ADAAB /* type_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 434203D6B4F19077DF743AC2 /* type_string.h */; };
+		82E2C2171DE97781B99CB7F2 /* dump.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DB7CCBF9EC26B090D86459A /* dump.h */; };
+		84BA4BE45536C270BD0F65B2 /* lua_bit.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AF7D08EAB749169EE7039B /* lua_bit.c */; };
+		851DA6E0DE54238E21DCBDDA /* page_string.c in Sources */ = {isa = PBXBuildFile; fileRef = BA3C3A0D31B73C893D6E109F /* page_string.c */; };
+		8704DA18D7BA59FA6A4C4E13 /* OOCSortedIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = 71B5216D28D0350B140A47FE /* OOCSortedIndex.h */; };
+		87E8E7FF9ED251629965EDE8 /* NSDictionary+MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = 6974DFB160AA46C77165CDF1 /* NSDictionary+MessagePack.h */; };
+		8855D7B40F76476D39C8983C /* lua_cjson.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FCCA42C52F1165C2E466CFC /* lua_cjson.c */; };
+		890BDB78D0C37F20D2438ABD /* NSString+MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = B650BA29B20F349498376114 /* NSString+MessagePack.h */; };
+		8B154A868CD930DB0D9B8AB6 /* MessagePackPacker.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DD2107706F520D00CADE59 /* MessagePackPacker.h */; };
+		8C6FFD210C4E41B0CD809625 /* sbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 99DBA28B519363C307687456 /* sbuffer.h */; };
+		8DE0A264275F7F61B8527B5C /* lopcodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 524CEC2D73BA792824B9CCD6 /* lopcodes.h */; };
+		8ECE09BC463A522E7F0A8A23 /* type_set.h in Headers */ = {isa = PBXBuildFile; fileRef = 938A6D57D5DCC28E7CCB0681 /* type_set.h */; };
+		8F5A7E110D966906C8B941DD /* lstate.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E94F91552704DB101B20EBC /* lstate.c */; };
+		9144CE16B4FBD5F21B38CB47 /* NSArray+arrayWithFastEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD34A2B02B475B9CA706613 /* NSArray+arrayWithFastEnumeration.m */; };
+		92491CD255DE6BE9D8F0DF9D /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 148582E7FDBA8A1A468E7DEC /* util.h */; };
+		92701360EC9C7453970BF185 /* page_skiplist.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE0EF0289C92C4A66A16FF2 /* page_skiplist.h */; };
+		92B3CD597962A165CF26D4F0 /* fpconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C1AF7FFCEE577088733D036 /* fpconv.c */; };
+		93BC21197E5C347612E6D202 /* object.h in Headers */ = {isa = PBXBuildFile; fileRef = 5001615C6ED3838C657DF6DE /* object.h */; };
+		96D23B0B234F8EF8810E2079 /* fpconv.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E2256117E8D27B6B9AD1C9 /* fpconv.h */; };
+		97DB34B6573183589993A267 /* zone.c in Sources */ = {isa = PBXBuildFile; fileRef = C67C31CFEB92DB392B097D55 /* zone.c */; };
+		99468834DCA32315D35F1BBF /* Pods-objc-rlite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A2009B9C905E43E50A9744 /* Pods-objc-rlite-dummy.m */; };
+		9AB50640E7D680F6AAA812C1 /* lmem.c in Sources */ = {isa = PBXBuildFile; fileRef = E9A758D0BD437F09CC0851EC /* lmem.c */; };
+		A03823632B90D67B5219DF94 /* OOCModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A80FAC68CB81D48E1821700C /* OOCModel.h */; };
+		A0DD2A838ACE80233D327201 /* OhmocAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22A186961E639F5F1AC048 /* OhmocAsync.m */; };
+		A1BA340408D7E66DCD5C0086 /* OOCObject.h in Headers */ = {isa = PBXBuildFile; fileRef = AF7ABE82976E062563E8C4A8 /* OOCObject.h */; };
+		A3435F68FD722ECAEEAA8C67 /* NSNumber+MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A9816EB96266DB722CD25E9 /* NSNumber+MessagePack.h */; };
+		A3505E515B2E9F7C5A197868 /* rand.h in Headers */ = {isa = PBXBuildFile; fileRef = 0747DF8421774AA1C2764FA1 /* rand.h */; };
+		A3F1C68183595425F14CC4F2 /* pqsort.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DC0B616F060AD7BBB5356D2 /* pqsort.h */; };
+		A461B66F7512BDBD02333F1E /* ldebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 96008F528D2F1E9B79511869 /* ldebug.h */; };
+		A906789E112BA9BC99402947 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1336B3964EF355FEA4CE1176 /* Foundation.framework */; };
+		AADC1D7F2243E6C8F733181C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1336B3964EF355FEA4CE1176 /* Foundation.framework */; };
+		ABC09DDA549178DC70C4B9D0 /* pack_template.h in Headers */ = {isa = PBXBuildFile; fileRef = 64A156AFB3B14E942A697BEF /* pack_template.h */; };
+		AC032745C221D196C0E6EA64 /* pqsort.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D65B725C9DFA3BD3A2B396 /* pqsort.c */; };
+		AC1FC78940814DC0C8D5A396 /* pack_define.h in Headers */ = {isa = PBXBuildFile; fileRef = 0168A82EBC991654286A527B /* pack_define.h */; };
+		AD22CF28BBA6C8FBAA04BCBB /* restore.c in Sources */ = {isa = PBXBuildFile; fileRef = 89FBF25A9ABB52E5604DA105 /* restore.c */; };
+		ADE6D16BEC2B530D63DA276E /* sort.h in Headers */ = {isa = PBXBuildFile; fileRef = 19EEDF1CA09ECCD1459B21E7 /* sort.h */; };
+		AF37EE5CDB8A3C048C5CFEAF /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 52308673B69198628D641734 /* util.c */; };
+		B10AB63C4BA60186E3476B57 /* OOCIndexNotFoundException.h in Headers */ = {isa = PBXBuildFile; fileRef = 4159F3539678618D4636A0A7 /* OOCIndexNotFoundException.h */; };
+		B2DD5ACF0A55807CB5C91892 /* NSDictionary+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC665C406806D7701742CF2 /* NSDictionary+MessagePack.m */; };
+		B8AE58333F7DFC1EBC3A1AB2 /* OOCMissingIDException.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD66D2CDDA3C1DEF1AC411F /* OOCMissingIDException.h */; };
+		BAE5F0727EA87CC06B33FE59 /* ObjCHirlite.h in Headers */ = {isa = PBXBuildFile; fileRef = A641DBCA536C0D028A74F15C /* ObjCHirlite.h */; };
+		BBC8561123759AAE12566D56 /* OOCSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A07B1BD7DDEC4871A0A99769 /* OOCSet.h */; };
+		BCECF8D2063E120901C588E8 /* utilfromredis.c in Sources */ = {isa = PBXBuildFile; fileRef = F35515D7FE142779B9E6D809 /* utilfromredis.c */; };
+		BD024CDA7A16F3F69E3A59EE /* NSNull+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C60B036F78AA6A591844124 /* NSNull+MessagePack.m */; };
+		BDBFB3B523A3CEC51D702F74 /* vrefbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = BFE14CD0F9091327C4FEF3C4 /* vrefbuffer.c */; };
+		C1D42831A7379CA370CE100D /* page_skiplist.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F98061D691CF11EF814AE0F /* page_skiplist.c */; };
+		C5C90900356A61BF156D1E63 /* OOCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FC0603531C483E8AB44D3C /* OOCModel.m */; };
+		C6763DADD6025869E9A49F1E /* page_btree.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EFA449AD7A4E899AE12C439 /* page_btree.h */; };
+		C737E29C74BDDCBA57D6E83E /* OOCList.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A4996064BCA09A84DB512A /* OOCList.h */; };
+		C87F00BC88AB9F2E015AC4B3 /* lvm.h in Headers */ = {isa = PBXBuildFile; fileRef = 89058FC04134F5912FDD93E0 /* lvm.h */; };
+		C8E60A15A7876119598FF67E /* type_hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BF135A1B8DF1F5ADDB8046 /* type_hash.h */; };
+		C9B30EC8E6508CC99A6A2919 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 245ACDFAC03FED5628994C0A /* Pods-dummy.m */; };
+		CB06784668373430A231CC5D /* constants.h in Headers */ = {isa = PBXBuildFile; fileRef = E350625AD4C4ACD1DF0051B6 /* constants.h */; };
+		CEFB4125F52A183F8D3653B0 /* endianconv.h in Headers */ = {isa = PBXBuildFile; fileRef = C7892838A7679ADDBF3CA85E /* endianconv.h */; };
+		CF4CCB86091D333A961E7A2C /* zone.h in Headers */ = {isa = PBXBuildFile; fileRef = F6639C7B820B8963710ED6A2 /* zone.h */; };
+		D03F1ADE7447A693DAA4EF76 /* page_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 68E898767316DB61F8A11601 /* page_string.h */; };
+		D043FC3D13B25E9BADABD1C8 /* ldump.c in Sources */ = {isa = PBXBuildFile; fileRef = 8807D9A2E7425E5282F082C1 /* ldump.c */; };
+		D07A9C0541272C279F8AA450 /* luaconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BA9FC281C86E6E15882EFF8 /* luaconf.h */; };
+		D200EC8106812BE753B75CB8 /* lparser.c in Sources */ = {isa = PBXBuildFile; fileRef = EB3C88C769900F86EBFD90B5 /* lparser.c */; };
+		D2D9A24786C1A06CE54D277E /* page_key.c in Sources */ = {isa = PBXBuildFile; fileRef = 14C83C59B41F10AEC42F271D /* page_key.c */; };
+		D4FFF37E86A5ED01ED3212F0 /* MessagePackParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D504508F475DC9FA7F8ACDA9 /* MessagePackParser.m */; };
+		D58579FF7EDCDAED22CE922A /* OOCException.h in Headers */ = {isa = PBXBuildFile; fileRef = 940E7B231499E8F5C2DB1C80 /* OOCException.h */; };
+		D72A9C65EF58FCC28BD453C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1336B3964EF355FEA4CE1176 /* Foundation.framework */; };
+		D82E93E2D460D7E710F925FC /* Ohmoc.h in Headers */ = {isa = PBXBuildFile; fileRef = 851F76092A8DF65A5DBB14AB /* Ohmoc.h */; };
+		D881ADBA0B5D2A0C011D5DF1 /* page_long.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB8395562DC85811B3FE379 /* page_long.h */; };
+		D96FC11B289CF5FAEF4270E1 /* ldebug.c in Sources */ = {isa = PBXBuildFile; fileRef = A28184BAC0C8800127611B80 /* ldebug.c */; };
+		D98803CF0D98139552232DD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1336B3964EF355FEA4CE1176 /* Foundation.framework */; };
+		DA76832CD620F3416F8032AA /* linit.c in Sources */ = {isa = PBXBuildFile; fileRef = D52D5B4AEC4E8ABF91A788F8 /* linit.c */; };
+		DB8062C7C1EB7E53E4B98FED /* page_multi_string.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F0AF06CE6EE90356C09DC0 /* page_multi_string.h */; };
+		DF1084921545CED5FB2FE425 /* llex.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B430B5DA29DBFA449E9A1 /* llex.c */; };
+		DF74A125E1B91FDF3AE7CF19 /* restore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7352AEE3DDAD18FE497A2D28 /* restore.h */; };
+		E02FF0731E330F58A9AF0D98 /* OOCCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC767CA6088D90E5D09273E /* OOCCollection.m */; };
+		E0B5FFF444C3FBC657BDF9ED /* type_set.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A23B55B6F91B102D32FD9E6 /* type_set.c */; };
+		E145857791AB728692973E2F /* lmathlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 7C8C827BE477F14D3EE61CE1 /* lmathlib.c */; };
+		E18BD865C21BEC0C2AFB3843 /* lzf.h in Headers */ = {isa = PBXBuildFile; fileRef = 072C6B85CBFC2A3A4E69491D /* lzf.h */; };
+		E3888AF3E3468EDB70073A8E /* lopcodes.c in Sources */ = {isa = PBXBuildFile; fileRef = 3958C7C7F2E18381C6F121A1 /* lopcodes.c */; };
+		E3D5DB98E8A270E6C8355115 /* status.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4B5999748E51280CAFD70E /* status.h */; };
+		E5D97F8C01C49DC57801F16F /* lparser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C272696551C5506746E36CF /* lparser.h */; };
+		E8D21B2862E2D91B286A1E1E /* OOCCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = DB117E2A6CF52D05E34B0851 /* OOCCollection.h */; };
+		EA092E41CDB7BF41CA50DC7E /* NSArray+MessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = 19F9FC78DC4DF53E4B2EE356 /* NSArray+MessagePack.h */; };
+		EBC56BF7AB4B70723E4F0364 /* crc64.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F210AD2C7C40975204533C5 /* crc64.h */; };
+		ECCAE3E0315EECCD4002F116 /* lbaselib.c in Sources */ = {isa = PBXBuildFile; fileRef = 972F7060619C04420E91FAC6 /* lbaselib.c */; };
+		ED2E9435354109534FFEFCF2 /* hyperloglog.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA0F09F87370C552BFD0C97 /* hyperloglog.h */; };
+		EDA61109F0ED1E5A087EBFAD /* unpack.h in Headers */ = {isa = PBXBuildFile; fileRef = B91CEAE3B8EEB61C993B636D /* unpack.h */; };
+		EE1A9ED5C1113EA1004FD9D2 /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = 773D740365BA38957E5AE0F5 /* ltm.c */; };
+		EF20806CA286350A543EB9D4 /* vrefbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D6F0E71BB0DA2E0A2FD364A /* vrefbuffer.h */; };
+		EF478D72CFCC71F8EA102F57 /* lfunc.h in Headers */ = {isa = PBXBuildFile; fileRef = D2BE222ED949A081F342E8EE /* lfunc.h */; };
+		F022F74CE16C58605A20DDDE /* unpack_template.h in Headers */ = {isa = PBXBuildFile; fileRef = 76274B8D3AFA68FEF54F89F9 /* unpack_template.h */; };
+		F07DD7C2AECCCDFEEB6D32EA /* Pods-ohmoc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A5F0BF52E4E73F539D949E /* Pods-ohmoc-dummy.m */; };
+		F42EF820C45CBDF77B3757E3 /* strbuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 668D97B4DE5309FB34E2E373 /* strbuf.h */; };
+		F4C26C528A1A1DCC6D97F7E3 /* ltablib.c in Sources */ = {isa = PBXBuildFile; fileRef = F34A4B84C4FCA1AA910735D1 /* ltablib.c */; };
+		F4C66CF9A8682D8A67F5A38A /* lauxlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DBD05C71E5AA333D25B7361 /* lauxlib.h */; };
+		F6029FB8C3D991F12ED6D4C7 /* scripting.c in Sources */ = {isa = PBXBuildFile; fileRef = 82D9E55D7E76E594A5F95B0C /* scripting.c */; };
+		F6248DA3CEFE833E4D0F17A7 /* NSNumber+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = E9512AB83AE0760D00BC5428 /* NSNumber+MessagePack.m */; };
+		F8CB4523FFF89D054DF14E79 /* ObjCHirlite.m in Sources */ = {isa = PBXBuildFile; fileRef = A42E733418426A496B26E76A /* ObjCHirlite.m */; };
+		FA7DAA2BBD0C431D8BA685ED /* lundump.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D51E07EBDD6467455DD991B /* lundump.c */; };
+		FB1474399564ABD6C347AB58 /* type_zset.c in Sources */ = {isa = PBXBuildFile; fileRef = 84CEF24CD1563C3617631079 /* type_zset.c */; };
+		FB3135CBE40D81DB9A898464 /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C910AEE3364256E024C704E /* rand.c */; };
+		FD24028429FC5CF6681C67DA /* lobject.h in Headers */ = {isa = PBXBuildFile; fileRef = 448BE63C4848279FEA2DBB73 /* lobject.h */; };
+		FF4DA778E115AE18CA37C704 /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = 122F1069EC169DCA19BA861F /* lzio.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B370C199819CD8C0F9AC9BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF008915033E720071C4A639 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16FEB317EE5A0E4AB4416C57;
+			remoteInfo = "Pods-msgpack";
+		};
+		303D89A1C88CDD67A0DA4749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF008915033E720071C4A639 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16FEB317EE5A0E4AB4416C57;
+			remoteInfo = "Pods-msgpack";
+		};
+		33E99B0A2D66E24EC2DB00BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF008915033E720071C4A639 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50BC42594A27663745233B40;
+			remoteInfo = "Pods-objc-rlite";
+		};
+		6C6C4498C3E233E45C297996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF008915033E720071C4A639 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50BC42594A27663745233B40;
+			remoteInfo = "Pods-objc-rlite";
+		};
+		EFCDBAF153F9CF61F907DFB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF008915033E720071C4A639 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D069F3826E06C47D035EB43;
+			remoteInfo = "Pods-ohmoc";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00194B34F755D6DEB6F2F607 /* loslib.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = loslib.c; path = Pod/Classes/rlite/lua/loslib.c; sourceTree = "<group>"; };
+		0168A82EBC991654286A527B /* pack_define.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pack_define.h; path = Pod/Classes/msgpack_src/msgpack/pack_define.h; sourceTree = "<group>"; };
+		01DD0B5C6494CD2D06421959 /* NSString+MessagePack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MessagePack.m"; path = "Pod/Classes/NSString+MessagePack.m"; sourceTree = "<group>"; };
+		03E7ADDB480F9D86F6C3B628 /* Ohmoc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Ohmoc.m; path = Pod/Classes/Ohmoc.m; sourceTree = "<group>"; };
+		04EA302675BC04C6087B3542 /* strbuf.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = strbuf.c; path = Pod/Classes/rlite/lua/strbuf.c; sourceTree = "<group>"; };
+		06FC0603531C483E8AB44D3C /* OOCModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OOCModel.m; path = Pod/Classes/OOCModel.m; sourceTree = "<group>"; };
+		072C6B85CBFC2A3A4E69491D /* lzf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lzf.h; path = Pod/Classes/rlite/lzf.h; sourceTree = "<group>"; };
+		0747DF8421774AA1C2764FA1 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = Pod/Classes/rlite/rand.h; sourceTree = "<group>"; };
+		09AA172F49446E72CC5B974F /* libPods-ohmoc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ohmoc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9B430B5DA29DBFA449E9A1 /* llex.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = llex.c; path = Pod/Classes/rlite/lua/llex.c; sourceTree = "<group>"; };
+		0BA9FC281C86E6E15882EFF8 /* luaconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = luaconf.h; path = Pod/Classes/rlite/lua/luaconf.h; sourceTree = "<group>"; };
+		0DA6CE7273DF5D403672CDFE /* page_key.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = page_key.h; path = Pod/Classes/rlite/page_key.h; sourceTree = "<group>"; };
+		0DDFB613928DCA617EB8F237 /* lua.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lua.h; path = Pod/Classes/rlite/lua/lua.h; sourceTree = "<group>"; };
+		0F474FF8AEA918FECE1D1D84 /* OOCMutableSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OOCMutableSet.m; path = Pod/Classes/OOCMutableSet.m; sourceTree = "<group>"; };
+		0F6A31C860ADA4B99391F698 /* NSNull+MessagePack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNull+MessagePack.h"; path = "Pod/Classes/NSNull+MessagePack.h"; sourceTree = "<group>"; };
+		122F1069EC169DCA19BA861F /* lzio.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lzio.c; path = Pod/Classes/rlite/lua/lzio.c; sourceTree = "<group>"; };
+		12A4996064BCA09A84DB512A /* OOCList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCList.h; path = Pod/Classes/OOCList.h; sourceTree = "<group>"; };
+		1336B3964EF355FEA4CE1176 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		137070A446CBD6357F8A55F1 /* NSData+MessagePack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+MessagePack.h"; path = "Pod/Classes/NSData+MessagePack.h"; sourceTree = "<group>"; };
+		148582E7FDBA8A1A468E7DEC /* util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = util.h; path = Pod/Classes/rlite/util.h; sourceTree = "<group>"; };
+		14C83C59B41F10AEC42F271D /* page_key.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = page_key.c; path = Pod/Classes/rlite/page_key.c; sourceTree = "<group>"; };
+		17B48DD7E3F6A9206E4C7EAA /* ltm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ltm.h; path = Pod/Classes/rlite/lua/ltm.h; sourceTree = "<group>"; };
+		17FD3B1F4E314B5F877F193C /* OhmocAsync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OhmocAsync.h; path = Pod/Classes/OhmocAsync.h; sourceTree = "<group>"; };
+		194B673154D254E4F276C272 /* hyperloglog.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = hyperloglog.c; path = Pod/Classes/rlite/hyperloglog.c; sourceTree = "<group>"; };
+		19EEDF1CA09ECCD1459B21E7 /* sort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sort.h; path = Pod/Classes/rlite/sort.h; sourceTree = "<group>"; };
+		19F9FC78DC4DF53E4B2EE356 /* NSArray+MessagePack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MessagePack.h"; path = "Pod/Classes/NSArray+MessagePack.h"; sourceTree = "<group>"; };
+		1C1AF7FFCEE577088733D036 /* fpconv.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = fpconv.c; path = Pod/Classes/rlite/lua/fpconv.c; sourceTree = "<group>"; };
+		1C272696551C5506746E36CF /* lparser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lparser.h; path = Pod/Classes/rlite/lua/lparser.h; sourceTree = "<group>"; };
+		1C910AEE3364256E024C704E /* rand.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = rand.c; path = Pod/Classes/rlite/rand.c; sourceTree = "<group>"; };
+		1D170A96AC1C982DAB392FFA /* lgc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lgc.h; path = Pod/Classes/rlite/lua/lgc.h; sourceTree = "<group>"; };
+		1D6F0E71BB0DA2E0A2FD364A /* vrefbuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vrefbuffer.h; path = Pod/Classes/msgpack_src/msgpack/vrefbuffer.h; sourceTree = "<group>"; };
+		1E110D02E9244FC55D51393A /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1F4B5999748E51280CAFD70E /* status.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = status.h; path = Pod/Classes/rlite/status.h; sourceTree = "<group>"; };
+		22402FCBC02F77D4C84F4D3D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C4DDCAC511EB2D79F34BD5 /* OOCdeletelua.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCdeletelua.h; path = Pod/Classes/OOCdeletelua.h; sourceTree = "<group>"; };
+		22EA6A8B403D7E5A9864D9FD /* MessagePackParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessagePackParser.h; path = Pod/Classes/MessagePackParser.h; sourceTree = "<group>"; };
+		245ACDFAC03FED5628994C0A /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		2503A54262C801240CB299E6 /* lundump.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lundump.h; path = Pod/Classes/rlite/lua/lundump.h; sourceTree = "<group>"; };
+		25D07E229475BA505D63C84B /* OOCObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OOCObject.m; path = Pod/Classes/OOCObject.m; sourceTree = "<group>"; };
+		25F0AF06CE6EE90356C09DC0 /* page_multi_string.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = page_multi_string.h; path = Pod/Classes/rlite/page_multi_string.h; sourceTree = "<group>"; };
+		265532F6FB5ECCB00C89A9AD /* lzio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lzio.h; path = Pod/Classes/rlite/lua/lzio.h; sourceTree = "<group>"; };
+		2AF4C9351A80414E900AE15C /* MessagePack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessagePack.h; path = Pod/Classes/MessagePack.h; sourceTree = "<group>"; };
+		2CB1AAD74B3A76A65B876AA9 /* ldo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ldo.h; path = Pod/Classes/rlite/lua/ldo.h; sourceTree = "<group>"; };
+		2D2CD1524BAD955D66E8FC5E /* llex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = llex.h; path = Pod/Classes/rlite/lua/llex.h; sourceTree = "<group>"; };
+		2DB7CCBF9EC26B090D86459A /* dump.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dump.h; path = Pod/Classes/rlite/dump.h; sourceTree = "<group>"; };
+		2DF127C4A72D8E70A2B466F9 /* llimits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = llimits.h; path = Pod/Classes/rlite/lua/llimits.h; sourceTree = "<group>"; };
+		3144E4BBB6ACB9011F108D47 /* msgpack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = msgpack.h; path = Pod/Classes/msgpack_src/msgpack.h; sourceTree = "<group>"; };
+		32A2009B9C905E43E50A9744 /* Pods-objc-rlite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-objc-rlite-dummy.m"; sourceTree = "<group>"; };
+		32A280CB76A01B71858CFB3B /* MessagePackParser+Streaming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MessagePackParser+Streaming.h"; path = "Pod/Classes/MessagePackParser+Streaming.h"; sourceTree = "<group>"; };
+		33E0E7EA2B3640F81446E020 /* Pods-msgpack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-msgpack-dummy.m"; sourceTree = "<group>"; };
+		349C8D5083D766BFF482C03E /* loadlib.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = loadlib.c; path = Pod/Classes/rlite/lua/loadlib.c; sourceTree = "<group>"; };
+		34C0EE783A6D40F494277471 /* ldo.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ldo.c; path = Pod/Classes/rlite/lua/ldo.c; sourceTree = "<group>"; };
+		34E1BD8D465A34397F8B78CB /* lua_struct.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lua_struct.c; path = Pod/Classes/rlite/lua/lua_struct.c; sourceTree = "<group>"; };
+		354E1573F75B9F03863C8EB8 /* lstrlib.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lstrlib.c; path = Pod/Classes/rlite/lua/lstrlib.c; sourceTree = "<group>"; };
+		36564801F889DD5C7942EED1 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = Pod/Classes/msgpack_src/msgpack/version.h; sourceTree = "<group>"; };
+		37FF06B38887F165683F1327 /* MessagePackPacker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MessagePackPacker.m; path = Pod/Classes/MessagePackPacker.m; sourceTree = "<group>"; };
+		3864376F336DFABE0478CC4E /* lzf_d.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lzf_d.c; path = Pod/Classes/rlite/lzf_d.c; sourceTree = "<group>"; };
+		38D701FFDB601C7DF0EA3E76 /* type_zset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = type_zset.h; path = Pod/Classes/rlite/type_zset.h; sourceTree = "<group>"; };
+		393AC6CB873BFC572B60EF79 /* lua_cmsgpack.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lua_cmsgpack.c; path = Pod/Classes/rlite/lua/lua_cmsgpack.c; sourceTree = "<group>"; };
+		3958C7C7F2E18381C6F121A1 /* lopcodes.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lopcodes.c; path = Pod/Classes/rlite/lua/lopcodes.c; sourceTree = "<group>"; };
+		3B36D2A72FE1CF78FF4D3E1D /* lgc.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lgc.c; path = Pod/Classes/rlite/lua/lgc.c; sourceTree = "<group>"; };
+		3D0F310DCCE1D2C263BD0A26 /* liolib.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = liolib.c; path = Pod/Classes/rlite/lua/liolib.c; sourceTree = "<group>"; };
+		3E22A186961E639F5F1AC048 /* OhmocAsync.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OhmocAsync.m; path = Pod/Classes/OhmocAsync.m; sourceTree = "<group>"; };
+		3E7BC12EEB651E52B8CB7239 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		4159F3539678618D4636A0A7 /* OOCIndexNotFoundException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCIndexNotFoundException.h; path = Pod/Classes/OOCIndexNotFoundException.h; sourceTree = "<group>"; };
+		42FBE7D54011769457F3CFC8 /* pack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pack.h; path = Pod/Classes/msgpack_src/msgpack/pack.h; sourceTree = "<group>"; };
+		43038614AA12F386BA4E0BE2 /* page_list.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = page_list.h; path = Pod/Classes/rlite/page_list.h; sourceTree = "<group>"; };
+		434203D6B4F19077DF743AC2 /* type_string.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = type_string.h; path = Pod/Classes/rlite/type_string.h; sourceTree = "<group>"; };
+		446ADF1D55BDE23E1A2BAE6D /* OOCIndexNotFoundException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OOCIndexNotFoundException.m; path = Pod/Classes/OOCIndexNotFoundException.m; sourceTree = "<group>"; };
+		448BE63C4848279FEA2DBB73 /* lobject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lobject.h; path = Pod/Classes/rlite/lua/lobject.h; sourceTree = "<group>"; };
+		44DD5D286A4359D8B3BF011D /* page_long.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = page_long.c; path = Pod/Classes/rlite/page_long.c; sourceTree = "<group>"; };
+		4AF13802F0375E74A7AE89F4 /* lzfP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lzfP.h; path = Pod/Classes/rlite/lzfP.h; sourceTree = "<group>"; };
+		4DD66D2CDDA3C1DEF1AC411F /* OOCMissingIDException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCMissingIDException.h; path = Pod/Classes/OOCMissingIDException.h; sourceTree = "<group>"; };
+		4FCCA42C52F1165C2E466CFC /* lua_cjson.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lua_cjson.c; path = Pod/Classes/rlite/lua/lua_cjson.c; sourceTree = "<group>"; };
+		5001615C6ED3838C657DF6DE /* object.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = object.h; path = Pod/Classes/msgpack_src/msgpack/object.h; sourceTree = "<group>"; };
+		52308673B69198628D641734 /* util.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = util.c; path = Pod/Classes/rlite/util.c; sourceTree = "<group>"; };
+		524CEC2D73BA792824B9CCD6 /* lopcodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lopcodes.h; path = Pod/Classes/rlite/lua/lopcodes.h; sourceTree = "<group>"; };
+		5260A48C89114AF2CB455BB6 /* lcode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lcode.c; path = Pod/Classes/rlite/lua/lcode.c; sourceTree = "<group>"; };
+		532305C2238D1F411BF2FB00 /* dump.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = dump.c; path = Pod/Classes/rlite/dump.c; sourceTree = "<group>"; };
+		53A5F0BF52E4E73F539D949E /* Pods-ohmoc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ohmoc-dummy.m"; sourceTree = "<group>"; };
+		548ED7DFCA106941DE869158 /* hirlite.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = hirlite.c; path = Pod/Classes/rlite/hirlite.c; sourceTree = "<group>"; };
+		58FD8C6FFF32ECA52B1D28EF /* lapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lapi.c; path = Pod/Classes/rlite/lua/lapi.c; sourceTree = "<group>"; };
+		5AB26AC2697F83B3A1EA5840 /* Pods-msgpack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-msgpack-prefix.pch"; sourceTree = "<group>"; };
+		5B931336D165B7BBC898C857 /* type_list.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = type_list.c; path = Pod/Classes/rlite/type_list.c; sourceTree = "<group>"; };
+		5C0D1DBAC983B17B31BB7A7F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		5DA5EC81FED2674C9F175B09 /* OOCList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OOCList.m; path = Pod/Classes/OOCList.m; sourceTree = "<group>"; };
+		5EFA449AD7A4E899AE12C439 /* page_btree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = page_btree.h; path = Pod/Classes/rlite/page_btree.h; sourceTree = "<group>"; };
+		60B0DEC29A28162E5574D2F1 /* Pods-objc-rlite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-objc-rlite.xcconfig"; sourceTree = "<group>"; };
+		61464BBCE596CDE681E63027 /* type_list.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = type_list.h; path = Pod/Classes/rlite/type_list.h; sourceTree = "<group>"; };
+		62BF135A1B8DF1F5ADDB8046 /* type_hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = type_hash.h; path = Pod/Classes/rlite/type_hash.h; sourceTree = "<group>"; };
+		638B0D58E9E8D98CD92B10B4 /* type_string.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = type_string.c; path = Pod/Classes/rlite/type_string.c; sourceTree = "<group>"; };
+		63AC8802689C7C8F7125A7F6 /* version_master.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version_master.h; path = Pod/Classes/msgpack_src/msgpack/version_master.h; sourceTree = "<group>"; };
+		64A156AFB3B14E942A697BEF /* pack_template.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pack_template.h; path = Pod/Classes/msgpack_src/msgpack/pack_template.h; sourceTree = "<group>"; };
+		6627E48DAAAAA6F8BD4416AA /* rlite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rlite.h; path = Pod/Classes/rlite/rlite.h; sourceTree = "<group>"; };
+		66564C11C8A26EA1C33BC9BA /* print.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = print.c; path = Pod/Classes/rlite/lua/print.c; sourceTree = "<group>"; };
+		668D97B4DE5309FB34E2E373 /* strbuf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = strbuf.h; path = Pod/Classes/rlite/lua/strbuf.h; sourceTree = "<group>"; };
+		66B1E0DFF0D7168BBEC4D82C /* lualib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lualib.h; path = Pod/Classes/rlite/lua/lualib.h; sourceTree = "<group>"; };
+		6783ADE9117590BEFDC3634D /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = Pod/Classes/rlite/sha1.h; sourceTree = "<group>"; };
+		68BD3D7499DB44F0499FF9BD /* page_multi_string.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = page_multi_string.c; path = Pod/Classes/rlite/page_multi_string.c; sourceTree = "<group>"; };
+		68E898767316DB61F8A11601 /* page_string.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = page_string.h; path = Pod/Classes/rlite/page_string.h; sourceTree = "<group>"; };
+		6974DFB160AA46C77165CDF1 /* NSDictionary+MessagePack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MessagePack.h"; path = "Pod/Classes/NSDictionary+MessagePack.h"; sourceTree = "<group>"; };
+		69E2256117E8D27B6B9AD1C9 /* fpconv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fpconv.h; path = Pod/Classes/rlite/lua/fpconv.h; sourceTree = "<group>"; };
+		6A9816EB96266DB722CD25E9 /* NSNumber+MessagePack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+MessagePack.h"; path = "Pod/Classes/NSNumber+MessagePack.h"; sourceTree = "<group>"; };
+		6F210AD2C7C40975204533C5 /* crc64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crc64.h; path = Pod/Classes/rlite/crc64.h; sourceTree = "<group>"; };
+		70A9D960C4BA51F7AABB122D /* ldblib.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ldblib.c; path = Pod/Classes/rlite/lua/ldblib.c; sourceTree = "<group>"; };
+		71B5216D28D0350B140A47FE /* OOCSortedIndex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCSortedIndex.h; path = Pod/Classes/OOCSortedIndex.h; sourceTree = "<group>"; };
+		7352AEE3DDAD18FE497A2D28 /* restore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = restore.h; path = Pod/Classes/rlite/restore.h; sourceTree = "<group>"; };
+		74E288DF8BB316C9ACD01587 /* objectc.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = objectc.c; path = Pod/Classes/msgpack_src/objectc.c; sourceTree = "<group>"; };
+		76274B8D3AFA68FEF54F89F9 /* unpack_template.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unpack_template.h; path = Pod/Classes/msgpack_src/msgpack/unpack_template.h; sourceTree = "<group>"; };
+		768F2DC888680C65614708A6 /* Pods-ohmoc-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ohmoc-Private.xcconfig"; sourceTree = "<group>"; };
+		772D83B0D2FC5186CD2BC530 /* MessagePackParser+Streaming.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MessagePackParser+Streaming.m"; path = "Pod/Classes/MessagePackParser+Streaming.m"; sourceTree = "<group>"; };
+		773D740365BA38957E5AE0F5 /* ltm.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ltm.c; path = Pod/Classes/rlite/lua/ltm.c; sourceTree = "<group>"; };
+		7C8C827BE477F14D3EE61CE1 /* lmathlib.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lmathlib.c; path = Pod/Classes/rlite/lua/lmathlib.c; sourceTree = "<group>"; };
+		7D4F35AACD4C9B08526BF10D /* lvm.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lvm.c; path = Pod/Classes/rlite/lua/lvm.c; sourceTree = "<group>"; };
+		7D51E07EBDD6467455DD991B /* lundump.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lundump.c; path = Pod/Classes/rlite/lua/lundump.c; sourceTree = "<group>"; };
+		7D92B602760CC9DE16F1FCCD /* lstring.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lstring.c; path = Pod/Classes/rlite/lua/lstring.c; sourceTree = "<group>"; };
+		7DBD05C71E5AA333D25B7361 /* lauxlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lauxlib.h; path = Pod/Classes/rlite/lua/lauxlib.h; sourceTree = "<group>"; };
+		7DC0B616F060AD7BBB5356D2 /* pqsort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqsort.h; path = Pod/Classes/rlite/pqsort.h; sourceTree = "<group>"; };
+		7EB8395562DC85811B3FE379 /* page_long.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = page_long.h; path = Pod/Classes/rlite/page_long.h; sourceTree = "<group>"; };
+		7FAC780F48F2C7B40DC1582B /* OOCsavelua.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCsavelua.h; path = Pod/Classes/OOCsavelua.h; sourceTree = "<group>"; };
+		80AF7D08EAB749169EE7039B /* lua_bit.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lua_bit.c; path = Pod/Classes/rlite/lua/lua_bit.c; sourceTree = "<group>"; };
+		80CA12C687FFB9355FEE9AF3 /* utilfromredis.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utilfromredis.h; path = Pod/Classes/rlite/utilfromredis.h; sourceTree = "<group>"; };
+		82A032B7E3B3EC613ACB99C5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		82D9E55D7E76E594A5F95B0C /* scripting.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = scripting.c; path = Pod/Classes/rlite/scripting.c; sourceTree = "<group>"; };
+		84CEF24CD1563C3617631079 /* type_zset.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = type_zset.c; path = Pod/Classes/rlite/type_zset.c; sourceTree = "<group>"; };
+		850C22EBDFC60D3215A66CBE /* type_hash.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = type_hash.c; path = Pod/Classes/rlite/type_hash.c; sourceTree = "<group>"; };
+		851F76092A8DF65A5DBB14AB /* Ohmoc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Ohmoc.h; path = Pod/Classes/Ohmoc.h; sourceTree = "<group>"; };
+		8807D9A2E7425E5282F082C1 /* ldump.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ldump.c; path = Pod/Classes/rlite/lua/ldump.c; sourceTree = "<group>"; };
+		88D9E56E4FAD39B6AC687974 /* lapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lapi.h; path = Pod/Classes/rlite/lua/lapi.h; sourceTree = "<group>"; };
+		89058FC04134F5912FDD93E0 /* lvm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lvm.h; path = Pod/Classes/rlite/lua/lvm.h; sourceTree = "<group>"; };
+		89FBF25A9ABB52E5604DA105 /* restore.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = restore.c; path = Pod/Classes/rlite/restore.c; sourceTree = "<group>"; };
+		8A23B55B6F91B102D32FD9E6 /* type_set.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = type_set.c; path = Pod/Classes/rlite/type_set.c; sourceTree = "<group>"; };
+		8B91DB34A48D0B28ADACC6EC /* Pods-msgpack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-msgpack.xcconfig"; sourceTree = "<group>"; };
+		8BBF9FC120CEE78448453D68 /* lstring.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lstring.h; path = Pod/Classes/rlite/lua/lstring.h; sourceTree = "<group>"; };
+		8C60B036F78AA6A591844124 /* NSNull+MessagePack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNull+MessagePack.m"; path = "Pod/Classes/NSNull+MessagePack.m"; sourceTree = "<group>"; };
+		8E94F91552704DB101B20EBC /* lstate.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lstate.c; path = Pod/Classes/rlite/lua/lstate.c; sourceTree = "<group>"; };
+		8F98061D691CF11EF814AE0F /* page_skiplist.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = page_skiplist.c; path = Pod/Classes/rlite/page_skiplist.c; sourceTree = "<group>"; };
+		90A748C29A533147446B05AF /* lmem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lmem.h; path = Pod/Classes/rlite/lua/lmem.h; sourceTree = "<group>"; };
+		938A6D57D5DCC28E7CCB0681 /* type_set.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = type_set.h; path = Pod/Classes/rlite/type_set.h; sourceTree = "<group>"; };
+		940E7B231499E8F5C2DB1C80 /* OOCException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCException.h; path = Pod/Classes/OOCException.h; sourceTree = "<group>"; };
+		95AFAABB19D7C86A1E21CFCC /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		96008F528D2F1E9B79511869 /* ldebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ldebug.h; path = Pod/Classes/rlite/lua/ldebug.h; sourceTree = "<group>"; };
+		972F7060619C04420E91FAC6 /* lbaselib.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lbaselib.c; path = Pod/Classes/rlite/lua/lbaselib.c; sourceTree = "<group>"; };
+		99DBA28B519363C307687456 /* sbuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sbuffer.h; path = Pod/Classes/msgpack_src/msgpack/sbuffer.h; sourceTree = "<group>"; };
+		9CCF196C2D56FD69EFA0603A /* OOCIndex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCIndex.h; path = Pod/Classes/OOCIndex.h; sourceTree = "<group>"; };
+		9F449E58A3CD44059050A047 /* Pods-msgpack-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-msgpack-Private.xcconfig"; sourceTree = "<group>"; };
+		A07B1BD7DDEC4871A0A99769 /* OOCSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCSet.h; path = Pod/Classes/OOCSet.h; sourceTree = "<group>"; };
+		A0861C1F908FC56DB1DB0A0C /* OOCMutableSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCMutableSet.h; path = Pod/Classes/OOCMutableSet.h; sourceTree = "<group>"; };
+		A1DD2107706F520D00CADE59 /* MessagePackPacker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessagePackPacker.h; path = Pod/Classes/MessagePackPacker.h; sourceTree = "<group>"; };
+		A28184BAC0C8800127611B80 /* ldebug.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ldebug.c; path = Pod/Classes/rlite/lua/ldebug.c; sourceTree = "<group>"; };
+		A42E733418426A496B26E76A /* ObjCHirlite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ObjCHirlite.m; path = Pod/Classes/ObjCHirlite.m; sourceTree = "<group>"; };
+		A641DBCA536C0D028A74F15C /* ObjCHirlite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjCHirlite.h; path = Pod/Classes/ObjCHirlite.h; sourceTree = "<group>"; };
+		A7692FB0DE5BBA06C572A4D5 /* lfunc.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lfunc.c; path = Pod/Classes/rlite/lua/lfunc.c; sourceTree = "<group>"; };
+		A80FAC68CB81D48E1821700C /* OOCModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCModel.h; path = Pod/Classes/OOCModel.h; sourceTree = "<group>"; };
+		A903FC5FCED045C01AC71237 /* rlite.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = rlite.c; path = Pod/Classes/rlite/rlite.c; sourceTree = "<group>"; };
+		AA07FAEFAF30E6E2936204AF /* Pods-ohmoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ohmoc.xcconfig"; sourceTree = "<group>"; };
+		AAD9097488A2BE97606F32D6 /* hirlite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hirlite.h; path = Pod/Classes/rlite/hirlite.h; sourceTree = "<group>"; };
+		ABA0F09F87370C552BFD0C97 /* hyperloglog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hyperloglog.h; path = Pod/Classes/rlite/hyperloglog.h; sourceTree = "<group>"; };
+		ACD0D9E4B16C8A0F49FA0C7D /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		AF590CD85243F7811C5E28D5 /* lzf_c.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lzf_c.c; path = Pod/Classes/rlite/lzf_c.c; sourceTree = "<group>"; };
+		AF7ABE82976E062563E8C4A8 /* OOCObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCObject.h; path = Pod/Classes/OOCObject.h; sourceTree = "<group>"; };
+		B08552CF293C778D9C31E879 /* lcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lcode.h; path = Pod/Classes/rlite/lua/lcode.h; sourceTree = "<group>"; };
+		B143591503FF4AE30AFA0778 /* unpack.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unpack.c; path = Pod/Classes/msgpack_src/unpack.c; sourceTree = "<group>"; };
+		B61E5D49F8D0A801A0155B23 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B650BA29B20F349498376114 /* NSString+MessagePack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MessagePack.h"; path = "Pod/Classes/NSString+MessagePack.h"; sourceTree = "<group>"; };
+		B8377C439652B52550A6B2EA /* sysdep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sysdep.h; path = Pod/Classes/msgpack_src/msgpack/sysdep.h; sourceTree = "<group>"; };
+		B8677BAF4433A95DD92F0156 /* unpack_define.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unpack_define.h; path = Pod/Classes/msgpack_src/msgpack/unpack_define.h; sourceTree = "<group>"; };
+		B91CEAE3B8EEB61C993B636D /* unpack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unpack.h; path = Pod/Classes/msgpack_src/msgpack/unpack.h; sourceTree = "<group>"; };
+		BA2D70EC61465AA3A54351EC /* OOCUnique.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCUnique.h; path = Pod/Classes/OOCUnique.h; sourceTree = "<group>"; };
+		BA3C3A0D31B73C893D6E109F /* page_string.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = page_string.c; path = Pod/Classes/rlite/page_string.c; sourceTree = "<group>"; };
+		BA8ED7C49C4C04928E120B3D /* libPods-objc-rlite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-objc-rlite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE232F3B8F59E89F90B03EAE /* page_btree.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = page_btree.c; path = Pod/Classes/rlite/page_btree.c; sourceTree = "<group>"; };
+		BFCA06053905F7DBDA43143E /* crc64.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = crc64.c; path = Pod/Classes/rlite/crc64.c; sourceTree = "<group>"; };
+		BFE14CD0F9091327C4FEF3C4 /* vrefbuffer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = vrefbuffer.c; path = Pod/Classes/msgpack_src/vrefbuffer.c; sourceTree = "<group>"; };
+		C49F9239FA613241F4BA1422 /* lauxlib.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lauxlib.c; path = Pod/Classes/rlite/lua/lauxlib.c; sourceTree = "<group>"; };
+		C67C31CFEB92DB392B097D55 /* zone.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zone.c; path = Pod/Classes/msgpack_src/zone.c; sourceTree = "<group>"; };
+		C77B2DBA14ACAD6121B1E61A /* OOCMissingIDException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OOCMissingIDException.m; path = Pod/Classes/OOCMissingIDException.m; sourceTree = "<group>"; };
+		C7892838A7679ADDBF3CA85E /* endianconv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = endianconv.h; path = Pod/Classes/rlite/endianconv.h; sourceTree = "<group>"; };
+		C9885655C92774974CD913B6 /* version.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = version.c; path = Pod/Classes/msgpack_src/version.c; sourceTree = "<group>"; };
+		CF32DDA0B8193E5B61E66282 /* lstate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lstate.h; path = Pod/Classes/rlite/lua/lstate.h; sourceTree = "<group>"; };
+		D03A0E7A04DE0E513C4F5B03 /* Pods-objc-rlite-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-objc-rlite-Private.xcconfig"; sourceTree = "<group>"; };
+		D175D5C2FC33B5ED8BD2B15B /* OOCSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OOCSet.m; path = Pod/Classes/OOCSet.m; sourceTree = "<group>"; };
+		D2BE222ED949A081F342E8EE /* lfunc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lfunc.h; path = Pod/Classes/rlite/lua/lfunc.h; sourceTree = "<group>"; };
+		D3DFEE1CA0917B0DA234F98A /* page_list.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = page_list.c; path = Pod/Classes/rlite/page_list.c; sourceTree = "<group>"; };
+		D440226C83DFBBA499CB8619 /* OOCException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OOCException.m; path = Pod/Classes/OOCException.m; sourceTree = "<group>"; };
+		D504508F475DC9FA7F8ACDA9 /* MessagePackParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MessagePackParser.m; path = Pod/Classes/MessagePackParser.m; sourceTree = "<group>"; };
+		D52D5B4AEC4E8ABF91A788F8 /* linit.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = linit.c; path = Pod/Classes/rlite/lua/linit.c; sourceTree = "<group>"; };
+		D53303EBC62EA3E188D976E6 /* ltable.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ltable.c; path = Pod/Classes/rlite/lua/ltable.c; sourceTree = "<group>"; };
+		D966B2E69393A077EEB82B34 /* scripting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scripting.h; path = Pod/Classes/rlite/scripting.h; sourceTree = "<group>"; };
+		DB117E2A6CF52D05E34B0851 /* OOCCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCCollection.h; path = Pod/Classes/OOCCollection.h; sourceTree = "<group>"; };
+		DDC665C406806D7701742CF2 /* NSDictionary+MessagePack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MessagePack.m"; path = "Pod/Classes/NSDictionary+MessagePack.m"; sourceTree = "<group>"; };
+		DEBE4C9442D617DC8ACB0C1F /* NSArray+MessagePack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MessagePack.m"; path = "Pod/Classes/NSArray+MessagePack.m"; sourceTree = "<group>"; };
+		E15457AEEEAC71B1133C7CA3 /* ltable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ltable.h; path = Pod/Classes/rlite/lua/ltable.h; sourceTree = "<group>"; };
+		E350625AD4C4ACD1DF0051B6 /* constants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = constants.h; path = Pod/Classes/rlite/constants.h; sourceTree = "<group>"; };
+		E6C7FA9B8BF744159656D36E /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = Pod/Classes/rlite/sha1.c; sourceTree = "<group>"; };
+		E943656A5876CB390C432A29 /* Pods-objc-rlite-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-objc-rlite-prefix.pch"; sourceTree = "<group>"; };
+		E9512AB83AE0760D00BC5428 /* NSNumber+MessagePack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+MessagePack.m"; path = "Pod/Classes/NSNumber+MessagePack.m"; sourceTree = "<group>"; };
+		E9A758D0BD437F09CC0851EC /* lmem.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lmem.c; path = Pod/Classes/rlite/lua/lmem.c; sourceTree = "<group>"; };
+		E9D65B725C9DFA3BD3A2B396 /* pqsort.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = pqsort.c; path = Pod/Classes/rlite/pqsort.c; sourceTree = "<group>"; };
+		EAD34A2B02B475B9CA706613 /* NSArray+arrayWithFastEnumeration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+arrayWithFastEnumeration.m"; path = "Pod/Classes/NSArray+arrayWithFastEnumeration.m"; sourceTree = "<group>"; };
+		EB3C88C769900F86EBFD90B5 /* lparser.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lparser.c; path = Pod/Classes/rlite/lua/lparser.c; sourceTree = "<group>"; };
+		EBD88D6BD8288D2200B9E356 /* OOCUniqueIndexViolationException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OOCUniqueIndexViolationException.h; path = Pod/Classes/OOCUniqueIndexViolationException.h; sourceTree = "<group>"; };
+		ECE0874F48C6C95ECA1319A1 /* NSData+MessagePack.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+MessagePack.m"; path = "Pod/Classes/NSData+MessagePack.m"; sourceTree = "<group>"; };
+		EEB962EACAAAD08E9425DC09 /* OOCUniqueIndexViolationException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OOCUniqueIndexViolationException.m; path = Pod/Classes/OOCUniqueIndexViolationException.m; sourceTree = "<group>"; };
+		EEE0EF0289C92C4A66A16FF2 /* page_skiplist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = page_skiplist.h; path = Pod/Classes/rlite/page_skiplist.h; sourceTree = "<group>"; };
+		EFC767CA6088D90E5D09273E /* OOCCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OOCCollection.m; path = Pod/Classes/OOCCollection.m; sourceTree = "<group>"; };
+		F235720B21C535758E461170 /* libPods-msgpack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-msgpack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34A4B84C4FCA1AA910735D1 /* ltablib.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ltablib.c; path = Pod/Classes/rlite/lua/ltablib.c; sourceTree = "<group>"; };
+		F35515D7FE142779B9E6D809 /* utilfromredis.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = utilfromredis.c; path = Pod/Classes/rlite/utilfromredis.c; sourceTree = "<group>"; };
+		F4BA319D83BCB9D0D65169B8 /* zbuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zbuffer.h; path = Pod/Classes/msgpack_src/msgpack/zbuffer.h; sourceTree = "<group>"; };
+		F5DCDFBABA9EAB4A051BE136 /* lobject.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = lobject.c; path = Pod/Classes/rlite/lua/lobject.c; sourceTree = "<group>"; };
+		F6639C7B820B8963710ED6A2 /* zone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zone.h; path = Pod/Classes/msgpack_src/msgpack/zone.h; sourceTree = "<group>"; };
+		FAE5527FEFD3A7432CDC4804 /* sort.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sort.c; path = Pod/Classes/rlite/sort.c; sourceTree = "<group>"; };
+		FCFAA887854B4C493C129D7E /* NSArray+arrayWithFastEnumeration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+arrayWithFastEnumeration.h"; path = "Pod/Classes/NSArray+arrayWithFastEnumeration.h"; sourceTree = "<group>"; };
+		FFE3FEAD644E93615CBC11C7 /* Pods-ohmoc-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ohmoc-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F4683E7926CE76809DB88D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A906789E112BA9BC99402947 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C182071657F0C2DBDB9667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D72A9C65EF58FCC28BD453C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BBD1D22558B758DFB1B633D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADC1D7F2243E6C8F733181C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		800C9106526F40647DA3E93A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98803CF0D98139552232DD8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A94A35774543516750A4F78 = {
+			isa = PBXGroup;
+			children = (
+				B61E5D49F8D0A801A0155B23 /* Podfile */,
+				D3D13686F5C019C4DE367552 /* Frameworks */,
+				916A56E5FB035D607E327AE3 /* Pods */,
+				B83A7301276875898B4B54B5 /* Products */,
+				338F607A0D32AD4349A6B3C0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		0BB17D5268A294C26E5D14C8 /* ohmoc */ = {
+			isa = PBXGroup;
+			children = (
+				FCFAA887854B4C493C129D7E /* NSArray+arrayWithFastEnumeration.h */,
+				EAD34A2B02B475B9CA706613 /* NSArray+arrayWithFastEnumeration.m */,
+				DB117E2A6CF52D05E34B0851 /* OOCCollection.h */,
+				EFC767CA6088D90E5D09273E /* OOCCollection.m */,
+				940E7B231499E8F5C2DB1C80 /* OOCException.h */,
+				D440226C83DFBBA499CB8619 /* OOCException.m */,
+				9CCF196C2D56FD69EFA0603A /* OOCIndex.h */,
+				4159F3539678618D4636A0A7 /* OOCIndexNotFoundException.h */,
+				446ADF1D55BDE23E1A2BAE6D /* OOCIndexNotFoundException.m */,
+				12A4996064BCA09A84DB512A /* OOCList.h */,
+				5DA5EC81FED2674C9F175B09 /* OOCList.m */,
+				4DD66D2CDDA3C1DEF1AC411F /* OOCMissingIDException.h */,
+				C77B2DBA14ACAD6121B1E61A /* OOCMissingIDException.m */,
+				A80FAC68CB81D48E1821700C /* OOCModel.h */,
+				06FC0603531C483E8AB44D3C /* OOCModel.m */,
+				A0861C1F908FC56DB1DB0A0C /* OOCMutableSet.h */,
+				0F474FF8AEA918FECE1D1D84 /* OOCMutableSet.m */,
+				AF7ABE82976E062563E8C4A8 /* OOCObject.h */,
+				25D07E229475BA505D63C84B /* OOCObject.m */,
+				A07B1BD7DDEC4871A0A99769 /* OOCSet.h */,
+				D175D5C2FC33B5ED8BD2B15B /* OOCSet.m */,
+				71B5216D28D0350B140A47FE /* OOCSortedIndex.h */,
+				BA2D70EC61465AA3A54351EC /* OOCUnique.h */,
+				EBD88D6BD8288D2200B9E356 /* OOCUniqueIndexViolationException.h */,
+				EEB962EACAAAD08E9425DC09 /* OOCUniqueIndexViolationException.m */,
+				22C4DDCAC511EB2D79F34BD5 /* OOCdeletelua.h */,
+				7FAC780F48F2C7B40DC1582B /* OOCsavelua.h */,
+				851F76092A8DF65A5DBB14AB /* Ohmoc.h */,
+				03E7ADDB480F9D86F6C3B628 /* Ohmoc.m */,
+				17FD3B1F4E314B5F877F193C /* OhmocAsync.h */,
+				3E22A186961E639F5F1AC048 /* OhmocAsync.m */,
+				D21A9AEEF564D8983255ECDE /* Support Files */,
+			);
+			path = ohmoc;
+			sourceTree = "<group>";
+		};
+		1C529FF84E21CB7B7BA67E67 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B91DB34A48D0B28ADACC6EC /* Pods-msgpack.xcconfig */,
+				9F449E58A3CD44059050A047 /* Pods-msgpack-Private.xcconfig */,
+				33E0E7EA2B3640F81446E020 /* Pods-msgpack-dummy.m */,
+				5AB26AC2697F83B3A1EA5840 /* Pods-msgpack-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-msgpack";
+			sourceTree = "<group>";
+		};
+		338F607A0D32AD4349A6B3C0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D621750A9BBB84F488DF90D2 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		70780AD7556CA883C982AF5C /* objc-rlite */ = {
+			isa = PBXGroup;
+			children = (
+				A641DBCA536C0D028A74F15C /* ObjCHirlite.h */,
+				A42E733418426A496B26E76A /* ObjCHirlite.m */,
+				E350625AD4C4ACD1DF0051B6 /* constants.h */,
+				BFCA06053905F7DBDA43143E /* crc64.c */,
+				6F210AD2C7C40975204533C5 /* crc64.h */,
+				532305C2238D1F411BF2FB00 /* dump.c */,
+				2DB7CCBF9EC26B090D86459A /* dump.h */,
+				C7892838A7679ADDBF3CA85E /* endianconv.h */,
+				1C1AF7FFCEE577088733D036 /* fpconv.c */,
+				69E2256117E8D27B6B9AD1C9 /* fpconv.h */,
+				548ED7DFCA106941DE869158 /* hirlite.c */,
+				AAD9097488A2BE97606F32D6 /* hirlite.h */,
+				194B673154D254E4F276C272 /* hyperloglog.c */,
+				ABA0F09F87370C552BFD0C97 /* hyperloglog.h */,
+				58FD8C6FFF32ECA52B1D28EF /* lapi.c */,
+				88D9E56E4FAD39B6AC687974 /* lapi.h */,
+				C49F9239FA613241F4BA1422 /* lauxlib.c */,
+				7DBD05C71E5AA333D25B7361 /* lauxlib.h */,
+				972F7060619C04420E91FAC6 /* lbaselib.c */,
+				5260A48C89114AF2CB455BB6 /* lcode.c */,
+				B08552CF293C778D9C31E879 /* lcode.h */,
+				70A9D960C4BA51F7AABB122D /* ldblib.c */,
+				A28184BAC0C8800127611B80 /* ldebug.c */,
+				96008F528D2F1E9B79511869 /* ldebug.h */,
+				34C0EE783A6D40F494277471 /* ldo.c */,
+				2CB1AAD74B3A76A65B876AA9 /* ldo.h */,
+				8807D9A2E7425E5282F082C1 /* ldump.c */,
+				A7692FB0DE5BBA06C572A4D5 /* lfunc.c */,
+				D2BE222ED949A081F342E8EE /* lfunc.h */,
+				3B36D2A72FE1CF78FF4D3E1D /* lgc.c */,
+				1D170A96AC1C982DAB392FFA /* lgc.h */,
+				D52D5B4AEC4E8ABF91A788F8 /* linit.c */,
+				3D0F310DCCE1D2C263BD0A26 /* liolib.c */,
+				0A9B430B5DA29DBFA449E9A1 /* llex.c */,
+				2D2CD1524BAD955D66E8FC5E /* llex.h */,
+				2DF127C4A72D8E70A2B466F9 /* llimits.h */,
+				7C8C827BE477F14D3EE61CE1 /* lmathlib.c */,
+				E9A758D0BD437F09CC0851EC /* lmem.c */,
+				90A748C29A533147446B05AF /* lmem.h */,
+				349C8D5083D766BFF482C03E /* loadlib.c */,
+				F5DCDFBABA9EAB4A051BE136 /* lobject.c */,
+				448BE63C4848279FEA2DBB73 /* lobject.h */,
+				3958C7C7F2E18381C6F121A1 /* lopcodes.c */,
+				524CEC2D73BA792824B9CCD6 /* lopcodes.h */,
+				00194B34F755D6DEB6F2F607 /* loslib.c */,
+				EB3C88C769900F86EBFD90B5 /* lparser.c */,
+				1C272696551C5506746E36CF /* lparser.h */,
+				8E94F91552704DB101B20EBC /* lstate.c */,
+				CF32DDA0B8193E5B61E66282 /* lstate.h */,
+				7D92B602760CC9DE16F1FCCD /* lstring.c */,
+				8BBF9FC120CEE78448453D68 /* lstring.h */,
+				354E1573F75B9F03863C8EB8 /* lstrlib.c */,
+				D53303EBC62EA3E188D976E6 /* ltable.c */,
+				E15457AEEEAC71B1133C7CA3 /* ltable.h */,
+				F34A4B84C4FCA1AA910735D1 /* ltablib.c */,
+				773D740365BA38957E5AE0F5 /* ltm.c */,
+				17B48DD7E3F6A9206E4C7EAA /* ltm.h */,
+				0DDFB613928DCA617EB8F237 /* lua.h */,
+				80AF7D08EAB749169EE7039B /* lua_bit.c */,
+				4FCCA42C52F1165C2E466CFC /* lua_cjson.c */,
+				393AC6CB873BFC572B60EF79 /* lua_cmsgpack.c */,
+				34E1BD8D465A34397F8B78CB /* lua_struct.c */,
+				0BA9FC281C86E6E15882EFF8 /* luaconf.h */,
+				66B1E0DFF0D7168BBEC4D82C /* lualib.h */,
+				7D51E07EBDD6467455DD991B /* lundump.c */,
+				2503A54262C801240CB299E6 /* lundump.h */,
+				7D4F35AACD4C9B08526BF10D /* lvm.c */,
+				89058FC04134F5912FDD93E0 /* lvm.h */,
+				072C6B85CBFC2A3A4E69491D /* lzf.h */,
+				4AF13802F0375E74A7AE89F4 /* lzfP.h */,
+				AF590CD85243F7811C5E28D5 /* lzf_c.c */,
+				3864376F336DFABE0478CC4E /* lzf_d.c */,
+				122F1069EC169DCA19BA861F /* lzio.c */,
+				265532F6FB5ECCB00C89A9AD /* lzio.h */,
+				BE232F3B8F59E89F90B03EAE /* page_btree.c */,
+				5EFA449AD7A4E899AE12C439 /* page_btree.h */,
+				14C83C59B41F10AEC42F271D /* page_key.c */,
+				0DA6CE7273DF5D403672CDFE /* page_key.h */,
+				D3DFEE1CA0917B0DA234F98A /* page_list.c */,
+				43038614AA12F386BA4E0BE2 /* page_list.h */,
+				44DD5D286A4359D8B3BF011D /* page_long.c */,
+				7EB8395562DC85811B3FE379 /* page_long.h */,
+				68BD3D7499DB44F0499FF9BD /* page_multi_string.c */,
+				25F0AF06CE6EE90356C09DC0 /* page_multi_string.h */,
+				8F98061D691CF11EF814AE0F /* page_skiplist.c */,
+				EEE0EF0289C92C4A66A16FF2 /* page_skiplist.h */,
+				BA3C3A0D31B73C893D6E109F /* page_string.c */,
+				68E898767316DB61F8A11601 /* page_string.h */,
+				E9D65B725C9DFA3BD3A2B396 /* pqsort.c */,
+				7DC0B616F060AD7BBB5356D2 /* pqsort.h */,
+				66564C11C8A26EA1C33BC9BA /* print.c */,
+				1C910AEE3364256E024C704E /* rand.c */,
+				0747DF8421774AA1C2764FA1 /* rand.h */,
+				89FBF25A9ABB52E5604DA105 /* restore.c */,
+				7352AEE3DDAD18FE497A2D28 /* restore.h */,
+				A903FC5FCED045C01AC71237 /* rlite.c */,
+				6627E48DAAAAA6F8BD4416AA /* rlite.h */,
+				82D9E55D7E76E594A5F95B0C /* scripting.c */,
+				D966B2E69393A077EEB82B34 /* scripting.h */,
+				E6C7FA9B8BF744159656D36E /* sha1.c */,
+				6783ADE9117590BEFDC3634D /* sha1.h */,
+				FAE5527FEFD3A7432CDC4804 /* sort.c */,
+				19EEDF1CA09ECCD1459B21E7 /* sort.h */,
+				1F4B5999748E51280CAFD70E /* status.h */,
+				04EA302675BC04C6087B3542 /* strbuf.c */,
+				668D97B4DE5309FB34E2E373 /* strbuf.h */,
+				850C22EBDFC60D3215A66CBE /* type_hash.c */,
+				62BF135A1B8DF1F5ADDB8046 /* type_hash.h */,
+				5B931336D165B7BBC898C857 /* type_list.c */,
+				61464BBCE596CDE681E63027 /* type_list.h */,
+				8A23B55B6F91B102D32FD9E6 /* type_set.c */,
+				938A6D57D5DCC28E7CCB0681 /* type_set.h */,
+				638B0D58E9E8D98CD92B10B4 /* type_string.c */,
+				434203D6B4F19077DF743AC2 /* type_string.h */,
+				84CEF24CD1563C3617631079 /* type_zset.c */,
+				38D701FFDB601C7DF0EA3E76 /* type_zset.h */,
+				52308673B69198628D641734 /* util.c */,
+				148582E7FDBA8A1A468E7DEC /* util.h */,
+				F35515D7FE142779B9E6D809 /* utilfromredis.c */,
+				80CA12C687FFB9355FEE9AF3 /* utilfromredis.h */,
+				9FA1B13E3E975136B5C8F1A0 /* Support Files */,
+			);
+			path = "objc-rlite";
+			sourceTree = "<group>";
+		};
+		916A56E5FB035D607E327AE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C49BE18CE9C1FC1394FB5E5C /* msgpack */,
+				70780AD7556CA883C982AF5C /* objc-rlite */,
+				0BB17D5268A294C26E5D14C8 /* ohmoc */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9FA1B13E3E975136B5C8F1A0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				60B0DEC29A28162E5574D2F1 /* Pods-objc-rlite.xcconfig */,
+				D03A0E7A04DE0E513C4F5B03 /* Pods-objc-rlite-Private.xcconfig */,
+				32A2009B9C905E43E50A9744 /* Pods-objc-rlite-dummy.m */,
+				E943656A5876CB390C432A29 /* Pods-objc-rlite-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-objc-rlite";
+			sourceTree = "<group>";
+		};
+		B83A7301276875898B4B54B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22402FCBC02F77D4C84F4D3D /* libPods.a */,
+				F235720B21C535758E461170 /* libPods-msgpack.a */,
+				BA8ED7C49C4C04928E120B3D /* libPods-objc-rlite.a */,
+				09AA172F49446E72CC5B974F /* libPods-ohmoc.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C49BE18CE9C1FC1394FB5E5C /* msgpack */ = {
+			isa = PBXGroup;
+			children = (
+				2AF4C9351A80414E900AE15C /* MessagePack.h */,
+				A1DD2107706F520D00CADE59 /* MessagePackPacker.h */,
+				37FF06B38887F165683F1327 /* MessagePackPacker.m */,
+				22EA6A8B403D7E5A9864D9FD /* MessagePackParser.h */,
+				D504508F475DC9FA7F8ACDA9 /* MessagePackParser.m */,
+				32A280CB76A01B71858CFB3B /* MessagePackParser+Streaming.h */,
+				772D83B0D2FC5186CD2BC530 /* MessagePackParser+Streaming.m */,
+				19F9FC78DC4DF53E4B2EE356 /* NSArray+MessagePack.h */,
+				DEBE4C9442D617DC8ACB0C1F /* NSArray+MessagePack.m */,
+				137070A446CBD6357F8A55F1 /* NSData+MessagePack.h */,
+				ECE0874F48C6C95ECA1319A1 /* NSData+MessagePack.m */,
+				6974DFB160AA46C77165CDF1 /* NSDictionary+MessagePack.h */,
+				DDC665C406806D7701742CF2 /* NSDictionary+MessagePack.m */,
+				0F6A31C860ADA4B99391F698 /* NSNull+MessagePack.h */,
+				8C60B036F78AA6A591844124 /* NSNull+MessagePack.m */,
+				6A9816EB96266DB722CD25E9 /* NSNumber+MessagePack.h */,
+				E9512AB83AE0760D00BC5428 /* NSNumber+MessagePack.m */,
+				B650BA29B20F349498376114 /* NSString+MessagePack.h */,
+				01DD0B5C6494CD2D06421959 /* NSString+MessagePack.m */,
+				3144E4BBB6ACB9011F108D47 /* msgpack.h */,
+				5001615C6ED3838C657DF6DE /* object.h */,
+				74E288DF8BB316C9ACD01587 /* objectc.c */,
+				42FBE7D54011769457F3CFC8 /* pack.h */,
+				0168A82EBC991654286A527B /* pack_define.h */,
+				64A156AFB3B14E942A697BEF /* pack_template.h */,
+				99DBA28B519363C307687456 /* sbuffer.h */,
+				B8377C439652B52550A6B2EA /* sysdep.h */,
+				B143591503FF4AE30AFA0778 /* unpack.c */,
+				B91CEAE3B8EEB61C993B636D /* unpack.h */,
+				B8677BAF4433A95DD92F0156 /* unpack_define.h */,
+				76274B8D3AFA68FEF54F89F9 /* unpack_template.h */,
+				C9885655C92774974CD913B6 /* version.c */,
+				36564801F889DD5C7942EED1 /* version.h */,
+				63AC8802689C7C8F7125A7F6 /* version_master.h */,
+				BFE14CD0F9091327C4FEF3C4 /* vrefbuffer.c */,
+				1D6F0E71BB0DA2E0A2FD364A /* vrefbuffer.h */,
+				F4BA319D83BCB9D0D65169B8 /* zbuffer.h */,
+				C67C31CFEB92DB392B097D55 /* zone.c */,
+				F6639C7B820B8963710ED6A2 /* zone.h */,
+				1C529FF84E21CB7B7BA67E67 /* Support Files */,
+			);
+			path = msgpack;
+			sourceTree = "<group>";
+		};
+		D21A9AEEF564D8983255ECDE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA07FAEFAF30E6E2936204AF /* Pods-ohmoc.xcconfig */,
+				768F2DC888680C65614708A6 /* Pods-ohmoc-Private.xcconfig */,
+				53A5F0BF52E4E73F539D949E /* Pods-ohmoc-dummy.m */,
+				FFE3FEAD644E93615CBC11C7 /* Pods-ohmoc-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-ohmoc";
+			sourceTree = "<group>";
+		};
+		D3D13686F5C019C4DE367552 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB4B525F06D9D44F4CB23115 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D621750A9BBB84F488DF90D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E110D02E9244FC55D51393A /* Pods-acknowledgements.markdown */,
+				3E7BC12EEB651E52B8CB7239 /* Pods-acknowledgements.plist */,
+				245ACDFAC03FED5628994C0A /* Pods-dummy.m */,
+				ACD0D9E4B16C8A0F49FA0C7D /* Pods-environment.h */,
+				95AFAABB19D7C86A1E21CFCC /* Pods-resources.sh */,
+				82A032B7E3B3EC613ACB99C5 /* Pods.debug.xcconfig */,
+				5C0D1DBAC983B17B31BB7A7F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		DB4B525F06D9D44F4CB23115 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1336B3964EF355FEA4CE1176 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09192C4B5EDE97B5A2178CCB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441402EB85D6DACAA0C8A1D1 /* MessagePack.h in Headers */,
+				8B154A868CD930DB0D9B8AB6 /* MessagePackPacker.h in Headers */,
+				7DB05F16299229EDE9D43D3D /* MessagePackParser+Streaming.h in Headers */,
+				1E678CCE543E609713A9D815 /* MessagePackParser.h in Headers */,
+				EA092E41CDB7BF41CA50DC7E /* NSArray+MessagePack.h in Headers */,
+				2D98D2C4D35B8C0974E98B0C /* NSData+MessagePack.h in Headers */,
+				87E8E7FF9ED251629965EDE8 /* NSDictionary+MessagePack.h in Headers */,
+				14545E9636F68E8B8535C95E /* NSNull+MessagePack.h in Headers */,
+				A3435F68FD722ECAEEAA8C67 /* NSNumber+MessagePack.h in Headers */,
+				890BDB78D0C37F20D2438ABD /* NSString+MessagePack.h in Headers */,
+				0CB80C3DE8022DA5910C27E0 /* msgpack.h in Headers */,
+				93BC21197E5C347612E6D202 /* object.h in Headers */,
+				5954868CE3AD88F7E8D4C9FE /* pack.h in Headers */,
+				AC1FC78940814DC0C8D5A396 /* pack_define.h in Headers */,
+				ABC09DDA549178DC70C4B9D0 /* pack_template.h in Headers */,
+				8C6FFD210C4E41B0CD809625 /* sbuffer.h in Headers */,
+				370EC4CEAAEFD19D18993AD0 /* sysdep.h in Headers */,
+				EDA61109F0ED1E5A087EBFAD /* unpack.h in Headers */,
+				4330FBC5FA3AA27C5286DB8D /* unpack_define.h in Headers */,
+				F022F74CE16C58605A20DDDE /* unpack_template.h in Headers */,
+				6100D41ACF58AF505BD81FAA /* version.h in Headers */,
+				76509B6B0E3B0A75A227FA58 /* version_master.h in Headers */,
+				EF20806CA286350A543EB9D4 /* vrefbuffer.h in Headers */,
+				5F12912184B467B40B7621CA /* zbuffer.h in Headers */,
+				CF4CCB86091D333A961E7A2C /* zone.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5089908DF9E71F81CAD34435 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047FE1DA62978F50660BEE6E /* NSArray+arrayWithFastEnumeration.h in Headers */,
+				E8D21B2862E2D91B286A1E1E /* OOCCollection.h in Headers */,
+				D58579FF7EDCDAED22CE922A /* OOCException.h in Headers */,
+				2D5F6D08E9ED7BBE09F0C79D /* OOCIndex.h in Headers */,
+				B10AB63C4BA60186E3476B57 /* OOCIndexNotFoundException.h in Headers */,
+				C737E29C74BDDCBA57D6E83E /* OOCList.h in Headers */,
+				B8AE58333F7DFC1EBC3A1AB2 /* OOCMissingIDException.h in Headers */,
+				A03823632B90D67B5219DF94 /* OOCModel.h in Headers */,
+				391395BF552AEEEFBDC69993 /* OOCMutableSet.h in Headers */,
+				A1BA340408D7E66DCD5C0086 /* OOCObject.h in Headers */,
+				BBC8561123759AAE12566D56 /* OOCSet.h in Headers */,
+				8704DA18D7BA59FA6A4C4E13 /* OOCSortedIndex.h in Headers */,
+				4E3ACDAFD8F2A7B510D03F7E /* OOCUnique.h in Headers */,
+				556F618A92CE68D90E6CDAB6 /* OOCUniqueIndexViolationException.h in Headers */,
+				3B1FA14D993857E1F67700CA /* OOCdeletelua.h in Headers */,
+				7CA80C0A0F0E603D846B228F /* OOCsavelua.h in Headers */,
+				D82E93E2D460D7E710F925FC /* Ohmoc.h in Headers */,
+				37DD29242A3E6186469D815A /* OhmocAsync.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B4CC9477FA783C4701AD2F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE5F0727EA87CC06B33FE59 /* ObjCHirlite.h in Headers */,
+				CB06784668373430A231CC5D /* constants.h in Headers */,
+				EBC56BF7AB4B70723E4F0364 /* crc64.h in Headers */,
+				82E2C2171DE97781B99CB7F2 /* dump.h in Headers */,
+				CEFB4125F52A183F8D3653B0 /* endianconv.h in Headers */,
+				96D23B0B234F8EF8810E2079 /* fpconv.h in Headers */,
+				7794C599D98E31CD741DA0DC /* hirlite.h in Headers */,
+				ED2E9435354109534FFEFCF2 /* hyperloglog.h in Headers */,
+				4EFBBF2BA63E80603C7B263E /* lapi.h in Headers */,
+				F4C66CF9A8682D8A67F5A38A /* lauxlib.h in Headers */,
+				07905073A5AF7996A880A5DF /* lcode.h in Headers */,
+				A461B66F7512BDBD02333F1E /* ldebug.h in Headers */,
+				6161230785D273174C317F04 /* ldo.h in Headers */,
+				EF478D72CFCC71F8EA102F57 /* lfunc.h in Headers */,
+				0C21CB8F97D02E9978AF2C90 /* lgc.h in Headers */,
+				174476B94B2E2AB2E2567030 /* llex.h in Headers */,
+				41F25CDCA6A7EDD8A599DF49 /* llimits.h in Headers */,
+				59613DAB451EB92C4864EED4 /* lmem.h in Headers */,
+				FD24028429FC5CF6681C67DA /* lobject.h in Headers */,
+				8DE0A264275F7F61B8527B5C /* lopcodes.h in Headers */,
+				E5D97F8C01C49DC57801F16F /* lparser.h in Headers */,
+				2F6601AB0AFA8BD57E73E726 /* lstate.h in Headers */,
+				730AEB5D4992A5187FC9AD01 /* lstring.h in Headers */,
+				171EFC34661447B3DC6D7E49 /* ltable.h in Headers */,
+				4997DFB6E19F36016BCBB056 /* ltm.h in Headers */,
+				6806C05D7D5734D868950BFB /* lua.h in Headers */,
+				D07A9C0541272C279F8AA450 /* luaconf.h in Headers */,
+				00C46182C9C51B61A1FB92E3 /* lualib.h in Headers */,
+				48BC9E0218C1D8B22E3D4895 /* lundump.h in Headers */,
+				C87F00BC88AB9F2E015AC4B3 /* lvm.h in Headers */,
+				E18BD865C21BEC0C2AFB3843 /* lzf.h in Headers */,
+				4C5E67C703B64BF2A66E92D0 /* lzfP.h in Headers */,
+				18FB80E11B6B4C040C5379F0 /* lzio.h in Headers */,
+				C6763DADD6025869E9A49F1E /* page_btree.h in Headers */,
+				26C8607BE13E26FB420957D1 /* page_key.h in Headers */,
+				1F5BC79D0249FE5F68696584 /* page_list.h in Headers */,
+				D881ADBA0B5D2A0C011D5DF1 /* page_long.h in Headers */,
+				DB8062C7C1EB7E53E4B98FED /* page_multi_string.h in Headers */,
+				92701360EC9C7453970BF185 /* page_skiplist.h in Headers */,
+				D03F1ADE7447A693DAA4EF76 /* page_string.h in Headers */,
+				A3F1C68183595425F14CC4F2 /* pqsort.h in Headers */,
+				A3505E515B2E9F7C5A197868 /* rand.h in Headers */,
+				DF74A125E1B91FDF3AE7CF19 /* restore.h in Headers */,
+				373FA129A08BC3FE3BEF21FE /* rlite.h in Headers */,
+				40E840DFFA138D6850BAF5ED /* scripting.h in Headers */,
+				17AAC1DED3A2D59F1AD9548E /* sha1.h in Headers */,
+				ADE6D16BEC2B530D63DA276E /* sort.h in Headers */,
+				E3D5DB98E8A270E6C8355115 /* status.h in Headers */,
+				F42EF820C45CBDF77B3757E3 /* strbuf.h in Headers */,
+				C8E60A15A7876119598FF67E /* type_hash.h in Headers */,
+				70D4CCC52D67C22A3B3FFFC0 /* type_list.h in Headers */,
+				8ECE09BC463A522E7F0A8A23 /* type_set.h in Headers */,
+				8184B3148927C2BAFF8ADAAB /* type_string.h in Headers */,
+				7A010C0127AC796828C585DD /* type_zset.h in Headers */,
+				92491CD255DE6BE9D8F0DF9D /* util.h in Headers */,
+				139CF11CD6F5D55FB7916D8F /* utilfromredis.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		16FEB317EE5A0E4AB4416C57 /* Pods-msgpack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E53E22C7689818912965B89 /* Build configuration list for PBXNativeTarget "Pods-msgpack" */;
+			buildPhases = (
+				6E3EF94F57C2DA4B9096C8ED /* Sources */,
+				5BBD1D22558B758DFB1B633D /* Frameworks */,
+				09192C4B5EDE97B5A2178CCB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-msgpack";
+			productName = "Pods-msgpack";
+			productReference = F235720B21C535758E461170 /* libPods-msgpack.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2D069F3826E06C47D035EB43 /* Pods-ohmoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFAFB9E72F896A4830A59EB8 /* Build configuration list for PBXNativeTarget "Pods-ohmoc" */;
+			buildPhases = (
+				08A643134F112F14AFCE2C0B /* Sources */,
+				800C9106526F40647DA3E93A /* Frameworks */,
+				5089908DF9E71F81CAD34435 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA815DD0205FB72B428A1F52 /* PBXTargetDependency */,
+				08C23AA1A3A24B5E5E80439E /* PBXTargetDependency */,
+			);
+			name = "Pods-ohmoc";
+			productName = "Pods-ohmoc";
+			productReference = 09AA172F49446E72CC5B974F /* libPods-ohmoc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		50BC42594A27663745233B40 /* Pods-objc-rlite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0892C0188FDA1DBF74163FB3 /* Build configuration list for PBXNativeTarget "Pods-objc-rlite" */;
+			buildPhases = (
+				C0ECAAAB70D01336385E708F /* Sources */,
+				2F4683E7926CE76809DB88D1 /* Frameworks */,
+				72B4CC9477FA783C4701AD2F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-objc-rlite";
+			productName = "Pods-objc-rlite";
+			productReference = BA8ED7C49C4C04928E120B3D /* libPods-objc-rlite.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7726C55A4F4E4FDA913C30FD /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D30ADDBE6B5D66F062F9661E /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				DA087D66684F942574E1B48C /* Sources */,
+				36C182071657F0C2DBDB9667 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBF0C02B427B2AFD365655B7 /* PBXTargetDependency */,
+				A4F46FC28E717BAECB2694E8 /* PBXTargetDependency */,
+				3D69FFDB840DF88788F18352 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 22402FCBC02F77D4C84F4D3D /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF008915033E720071C4A639 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 21CF171021218384EA803E50 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0A94A35774543516750A4F78;
+			productRefGroup = B83A7301276875898B4B54B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7726C55A4F4E4FDA913C30FD /* Pods */,
+				16FEB317EE5A0E4AB4416C57 /* Pods-msgpack */,
+				50BC42594A27663745233B40 /* Pods-objc-rlite */,
+				2D069F3826E06C47D035EB43 /* Pods-ohmoc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08A643134F112F14AFCE2C0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9144CE16B4FBD5F21B38CB47 /* NSArray+arrayWithFastEnumeration.m in Sources */,
+				E02FF0731E330F58A9AF0D98 /* OOCCollection.m in Sources */,
+				227D41E6657694F831F69D14 /* OOCException.m in Sources */,
+				327B7294C4AC2C0CE80F55AE /* OOCIndexNotFoundException.m in Sources */,
+				77BBB22CF144A0B02C18CBFF /* OOCList.m in Sources */,
+				32007BED7CCC3E455D7AB0CD /* OOCMissingIDException.m in Sources */,
+				C5C90900356A61BF156D1E63 /* OOCModel.m in Sources */,
+				0801EFDF0A4C6C2D678DBDAE /* OOCMutableSet.m in Sources */,
+				0A7B70C509F9BD83D953AD11 /* OOCObject.m in Sources */,
+				66D2DDD625D165556E56E8B8 /* OOCSet.m in Sources */,
+				37623F0B8CF00582AADB9DA6 /* OOCUniqueIndexViolationException.m in Sources */,
+				12B3B8E23556EB8C36A6C01A /* Ohmoc.m in Sources */,
+				A0DD2A838ACE80233D327201 /* OhmocAsync.m in Sources */,
+				F07DD7C2AECCCDFEEB6D32EA /* Pods-ohmoc-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E3EF94F57C2DA4B9096C8ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510B9B18DDFF51EB64470D6F /* MessagePackPacker.m in Sources */,
+				1B5B9445283D2BC73709281B /* MessagePackParser+Streaming.m in Sources */,
+				D4FFF37E86A5ED01ED3212F0 /* MessagePackParser.m in Sources */,
+				7A249EF104AA8976FDED871B /* NSArray+MessagePack.m in Sources */,
+				0EA0E94C9A59E346DA868CF0 /* NSData+MessagePack.m in Sources */,
+				B2DD5ACF0A55807CB5C91892 /* NSDictionary+MessagePack.m in Sources */,
+				BD024CDA7A16F3F69E3A59EE /* NSNull+MessagePack.m in Sources */,
+				F6248DA3CEFE833E4D0F17A7 /* NSNumber+MessagePack.m in Sources */,
+				50357DA45F8AD344AAB2A6E1 /* NSString+MessagePack.m in Sources */,
+				68C398F70E634B5694FA2E0F /* Pods-msgpack-dummy.m in Sources */,
+				588E98603840AD476F60CD70 /* objectc.c in Sources */,
+				450594695EC3043066501D01 /* unpack.c in Sources */,
+				172C0DD5AE4EFFBC95C32585 /* version.c in Sources */,
+				BDBFB3B523A3CEC51D702F74 /* vrefbuffer.c in Sources */,
+				97DB34B6573183589993A267 /* zone.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0ECAAAB70D01336385E708F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CB4523FFF89D054DF14E79 /* ObjCHirlite.m in Sources */,
+				99468834DCA32315D35F1BBF /* Pods-objc-rlite-dummy.m in Sources */,
+				3FE08A0E69D6B3E69A2F3AE5 /* crc64.c in Sources */,
+				3174C0ED6CB95232140B9B33 /* dump.c in Sources */,
+				92B3CD597962A165CF26D4F0 /* fpconv.c in Sources */,
+				560A8F7DB096FCBC4ED9DD9D /* hirlite.c in Sources */,
+				05AF8DE809AB9E8BD4BBC3C4 /* hyperloglog.c in Sources */,
+				3C12E92DED81AD92775F29D4 /* lapi.c in Sources */,
+				62A9E91A4CCB13858BDA4136 /* lauxlib.c in Sources */,
+				ECCAE3E0315EECCD4002F116 /* lbaselib.c in Sources */,
+				7B419BC9F0A283B307F46C5C /* lcode.c in Sources */,
+				0908B7B7AA2474F2E3E0225E /* ldblib.c in Sources */,
+				D96FC11B289CF5FAEF4270E1 /* ldebug.c in Sources */,
+				5F78196B3D441AF51FEA3024 /* ldo.c in Sources */,
+				D043FC3D13B25E9BADABD1C8 /* ldump.c in Sources */,
+				59E8D2B1E5642339E0664443 /* lfunc.c in Sources */,
+				41CDA06C889E8292A5AF5AED /* lgc.c in Sources */,
+				DA76832CD620F3416F8032AA /* linit.c in Sources */,
+				087915F0AAE4E4A30B23F479 /* liolib.c in Sources */,
+				DF1084921545CED5FB2FE425 /* llex.c in Sources */,
+				E145857791AB728692973E2F /* lmathlib.c in Sources */,
+				9AB50640E7D680F6AAA812C1 /* lmem.c in Sources */,
+				5FAF4FD25CD4A31D050147BF /* loadlib.c in Sources */,
+				299181ADFB8F67031B14DD6E /* lobject.c in Sources */,
+				E3888AF3E3468EDB70073A8E /* lopcodes.c in Sources */,
+				4A266AA4C7974FCBAE74508D /* loslib.c in Sources */,
+				D200EC8106812BE753B75CB8 /* lparser.c in Sources */,
+				8F5A7E110D966906C8B941DD /* lstate.c in Sources */,
+				56826123ED73F7280CDCA7B4 /* lstring.c in Sources */,
+				789498FDD925E2219511CD43 /* lstrlib.c in Sources */,
+				146EFAD44F269DD3900E2797 /* ltable.c in Sources */,
+				F4C26C528A1A1DCC6D97F7E3 /* ltablib.c in Sources */,
+				EE1A9ED5C1113EA1004FD9D2 /* ltm.c in Sources */,
+				84BA4BE45536C270BD0F65B2 /* lua_bit.c in Sources */,
+				8855D7B40F76476D39C8983C /* lua_cjson.c in Sources */,
+				00164E0EC347FC24DDBDBE8B /* lua_cmsgpack.c in Sources */,
+				4F904CED9297CB4AA40DB7AE /* lua_struct.c in Sources */,
+				FA7DAA2BBD0C431D8BA685ED /* lundump.c in Sources */,
+				5E33EFBB277DC75ED9DEEE6E /* lvm.c in Sources */,
+				085EE2D773DE94E349405BFF /* lzf_c.c in Sources */,
+				51AE44BA9B3CFAA8B88EE2A6 /* lzf_d.c in Sources */,
+				FF4DA778E115AE18CA37C704 /* lzio.c in Sources */,
+				5125B7EEDE12E92F07FFA0B3 /* page_btree.c in Sources */,
+				D2D9A24786C1A06CE54D277E /* page_key.c in Sources */,
+				74437DA9E8CA717264915FE0 /* page_list.c in Sources */,
+				2AEDB0C10210BF88F2672F55 /* page_long.c in Sources */,
+				30F3D4210C6CA603B681E79A /* page_multi_string.c in Sources */,
+				C1D42831A7379CA370CE100D /* page_skiplist.c in Sources */,
+				851DA6E0DE54238E21DCBDDA /* page_string.c in Sources */,
+				AC032745C221D196C0E6EA64 /* pqsort.c in Sources */,
+				1CE5BBEDBC1251AEFE2622D9 /* print.c in Sources */,
+				FB3135CBE40D81DB9A898464 /* rand.c in Sources */,
+				AD22CF28BBA6C8FBAA04BCBB /* restore.c in Sources */,
+				75F47CC0D7A10009ABB833C1 /* rlite.c in Sources */,
+				F6029FB8C3D991F12ED6D4C7 /* scripting.c in Sources */,
+				67AFBEB0B0A98D38D21F2E05 /* sha1.c in Sources */,
+				5F8F471806D73E732B4C56B8 /* sort.c in Sources */,
+				3A9554FAEEEDE3F17D3EE783 /* strbuf.c in Sources */,
+				24C9E4C4E5D7B6219059AEE2 /* type_hash.c in Sources */,
+				7BC355529CDB27321E8CC006 /* type_list.c in Sources */,
+				E0B5FFF444C3FBC657BDF9ED /* type_set.c in Sources */,
+				47285D9337FA909B532C62A8 /* type_string.c in Sources */,
+				FB1474399564ABD6C347AB58 /* type_zset.c in Sources */,
+				AF37EE5CDB8A3C048C5CFEAF /* util.c in Sources */,
+				BCECF8D2063E120901C588E8 /* utilfromredis.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA087D66684F942574E1B48C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B30EC8E6508CC99A6A2919 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08C23AA1A3A24B5E5E80439E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-objc-rlite";
+			target = 50BC42594A27663745233B40 /* Pods-objc-rlite */;
+			targetProxy = 6C6C4498C3E233E45C297996 /* PBXContainerItemProxy */;
+		};
+		3D69FFDB840DF88788F18352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ohmoc";
+			target = 2D069F3826E06C47D035EB43 /* Pods-ohmoc */;
+			targetProxy = EFCDBAF153F9CF61F907DFB6 /* PBXContainerItemProxy */;
+		};
+		A4F46FC28E717BAECB2694E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-objc-rlite";
+			target = 50BC42594A27663745233B40 /* Pods-objc-rlite */;
+			targetProxy = 33E99B0A2D66E24EC2DB00BC /* PBXContainerItemProxy */;
+		};
+		AA815DD0205FB72B428A1F52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-msgpack";
+			target = 16FEB317EE5A0E4AB4416C57 /* Pods-msgpack */;
+			targetProxy = 1B370C199819CD8C0F9AC9BE /* PBXContainerItemProxy */;
+		};
+		CBF0C02B427B2AFD365655B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-msgpack";
+			target = 16FEB317EE5A0E4AB4416C57 /* Pods-msgpack */;
+			targetProxy = 303D89A1C88CDD67A0DA4749 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		177835AEC83B9BB99C29834F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		263043BCED2B67DB3E507D3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 768F2DC888680C65614708A6 /* Pods-ohmoc-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ohmoc/Pods-ohmoc-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4C495F28754F3643CFF8EC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 768F2DC888680C65614708A6 /* Pods-ohmoc-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-ohmoc/Pods-ohmoc-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5FDFECEA4077ED2B5F83AB61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F449E58A3CD44059050A047 /* Pods-msgpack-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-msgpack/Pods-msgpack-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		62B51629BD6819D90148F9CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F449E58A3CD44059050A047 /* Pods-msgpack-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-msgpack/Pods-msgpack-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		74092BDD7DF9218569CC8055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C0D1DBAC983B17B31BB7A7F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		87BE133E1BC63B10E673E35F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A032B7E3B3EC613ACB99C5 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9A5F22BC5BE959992F04F549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D03A0E7A04DE0E513C4F5B03 /* Pods-objc-rlite-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-objc-rlite/Pods-objc-rlite-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9E8D1887ADEC15C2A56B6E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A309BD6040759F1FD293566A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D03A0E7A04DE0E513C4F5B03 /* Pods-objc-rlite-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-objc-rlite/Pods-objc-rlite-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0892C0188FDA1DBF74163FB3 /* Build configuration list for PBXNativeTarget "Pods-objc-rlite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A309BD6040759F1FD293566A /* Debug */,
+				9A5F22BC5BE959992F04F549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21CF171021218384EA803E50 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177835AEC83B9BB99C29834F /* Debug */,
+				9E8D1887ADEC15C2A56B6E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E53E22C7689818912965B89 /* Build configuration list for PBXNativeTarget "Pods-msgpack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FDFECEA4077ED2B5F83AB61 /* Debug */,
+				62B51629BD6819D90148F9CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFAFB9E72F896A4830A59EB8 /* Build configuration list for PBXNativeTarget "Pods-ohmoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				263043BCED2B67DB3E507D3D /* Debug */,
+				4C495F28754F3643CFF8EC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D30ADDBE6B5D66F062F9661E /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87BE133E1BC63B10E673E35F /* Debug */,
+				74092BDD7DF9218569CC8055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF008915033E720071C4A639 /* Project object */;
+}
