@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SelectedConceptCollectionViewCell">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectedConceptCollectionViewCell" id="gTV-IL-0wX" customClass="SelectedConceptCollectionViewCell">
             <rect key="frame" x="0.0" y="0.0" width="160" height="172"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -19,7 +19,7 @@
 Human
 Humanoide</string>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" image="56950.png" translatesAutoresizingMaskIntoConstraints="NO" id="9HS-9R-LBS">
@@ -30,6 +30,10 @@ Humanoide</string>
             </view>
             <color key="backgroundColor" cyan="0.81473664310000005" magenta="0.99855090729999996" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
             <size key="customSize" width="160" height="172"/>
+            <connections>
+                <outlet property="image" destination="9HS-9R-LBS" id="QHc-s6-ogp"/>
+                <outlet property="names" destination="CWW-Oe-EhV" id="1KN-AX-4FL"/>
+            </connections>
             <point key="canvasLocation" x="394" y="376"/>
         </collectionViewCell>
     </objects>

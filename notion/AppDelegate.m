@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AvailableConcept.h"
+#include <Ohmoc.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +18,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Ohmoc createWithDocumentFilename:@"data.rld"];
+    [AvailableConcept ensureCreated];
     // Override point for customization after application launch.
     return YES;
 }

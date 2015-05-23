@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SelectedConceptCollectionViewCell : UICollectionViewCell
+@class AvailableConcept;
+@interface SelectedConceptCollectionViewCell : UICollectionViewCell {
+    IBOutlet UITextView* names;
+    IBOutlet UIImageView* image;
+}
+
+- (void)setPosition:(NSUInteger)position;
+- (void)setConcept:(AvailableConcept*)concept;
 
 @end

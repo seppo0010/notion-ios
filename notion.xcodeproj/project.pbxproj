@@ -137,6 +137,8 @@
 		C982C10D1B0FDA53001CB228 /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = C982C0981B0FDA53001CB228 /* transparent.png */; };
 		C982C10E1B0FDA53001CB228 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = C982C0991B0FDA53001CB228 /* white.png */; };
 		C982C10F1B0FDA53001CB228 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = C982C09A1B0FDA53001CB228 /* yellow.png */; };
+		C982C1121B0FDDE5001CB228 /* SelectedConcepts.m in Sources */ = {isa = PBXBuildFile; fileRef = C982C1111B0FDDE5001CB228 /* SelectedConcepts.m */; };
+		C982C1151B0FE1EC001CB228 /* AvailableConcept.m in Sources */ = {isa = PBXBuildFile; fileRef = C982C1141B0FE1EC001CB228 /* AvailableConcept.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,6 +293,10 @@
 		C982C0981B0FDA53001CB228 /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent.png; sourceTree = "<group>"; };
 		C982C0991B0FDA53001CB228 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		C982C09A1B0FDA53001CB228 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
+		C982C1101B0FDDE5001CB228 /* SelectedConcepts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedConcepts.h; sourceTree = "<group>"; };
+		C982C1111B0FDDE5001CB228 /* SelectedConcepts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedConcepts.m; sourceTree = "<group>"; };
+		C982C1131B0FE1EC001CB228 /* AvailableConcept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableConcept.h; sourceTree = "<group>"; };
+		C982C1141B0FE1EC001CB228 /* AvailableConcept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableConcept.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,6 +367,10 @@
 				C970E85F1B0FC3C50083CD71 /* Images.xcassets */,
 				C970E8611B0FC3C50083CD71 /* LaunchScreen.xib */,
 				C970E8521B0FC3C50083CD71 /* Supporting Files */,
+				C982C1131B0FE1EC001CB228 /* AvailableConcept.h */,
+				C982C1141B0FE1EC001CB228 /* AvailableConcept.m */,
+				C982C1101B0FDDE5001CB228 /* SelectedConcepts.h */,
+				C982C1111B0FDDE5001CB228 /* SelectedConcepts.m */,
 				C982C0141B0FC5B9001CB228 /* SelectedConceptListViewController.h */,
 				C982C0151B0FC5B9001CB228 /* SelectedConceptListViewController.m */,
 				C982C0161B0FC5B9001CB228 /* SelectedConceptListViewController.xib */,
@@ -785,7 +795,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C982C1121B0FDDE5001CB228 /* SelectedConcepts.m in Sources */,
 				C970E85B1B0FC3C50083CD71 /* ViewController.m in Sources */,
+				C982C1151B0FE1EC001CB228 /* AvailableConcept.m in Sources */,
 				C970E8581B0FC3C50083CD71 /* AppDelegate.m in Sources */,
 				C982C0221B0FD08C001CB228 /* SelectedConceptCollectionViewCell.m in Sources */,
 				C982C0171B0FC5B9001CB228 /* SelectedConceptListViewController.m in Sources */,
