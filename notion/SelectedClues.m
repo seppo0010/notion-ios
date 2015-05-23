@@ -73,7 +73,7 @@ NSString* subSeparator = @"_";
     return nil;
 }
 
-- (NSArray*)selectedClues:(NSUInteger)position {
+- (NSArray*)selectedClues:(NSUInteger)position includeMain:(BOOL)includeMain {
     NSString* selectedString;
     if (position == 0) selectedString = self.selected1;
     else if (position == 1) selectedString = self.selected2;
@@ -82,9 +82,11 @@ NSString* subSeparator = @"_";
     else return nil;
     NSArray* selected = [selectedString componentsSeparatedByString:subSeparator];
     NSMutableArray* clues = [NSMutableArray arrayWithCapacity:selected.count + 1];
-    AvailableClue* mainClue = [self mainClue:position];
-    if (mainClue) {
-        [clues addObject:mainClue];
+    if (includeMain) {
+        AvailableClue* mainClue = [self mainClue:position];
+        if (mainClue) {
+            [clues addObject:mainClue];
+        }
     }
 
     for (id selectedId in selected) {

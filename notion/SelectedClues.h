@@ -19,7 +19,7 @@
 - (AvailableClue*)mainClue4;
 - (AvailableClue*)mainClue:(NSUInteger)position;
 
-- (NSArray*)selectedClues:(NSUInteger)position;
+- (NSArray*)selectedClues:(NSUInteger)position includeMain:(BOOL)includeMain;
 - (BOOL)tryGuess:(NSString*)guess;
 
 @property NSString* answer;

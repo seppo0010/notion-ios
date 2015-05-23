@@ -15,6 +15,7 @@
 }
 
 - (void)setPosition:(NSUInteger)position;
-- (void)setClue:(AvailableClue*)concept;
+- (void)setMainClue:(AvailableClue*)concept;
+- (void)setClues:(NSArray*)clues;
 
 @end

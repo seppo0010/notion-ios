@@ -43,7 +43,8 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)_collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     SelectedConceptCollectionViewCell *cell = (SelectedConceptCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([SelectedConceptCollectionViewCell class]) forIndexPath:indexPath];
     [cell setPosition:indexPath.row];
-    [cell setClue:[selectedClues mainClue:indexPath.row]];
+    [cell setMainClue:[selectedClues mainClue:indexPath.row]];
+    [cell setClues:[selectedClues selectedClues:indexPath.row includeMain:FALSE]];
     return cell;
 }
 

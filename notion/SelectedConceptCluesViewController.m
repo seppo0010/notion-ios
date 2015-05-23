@@ -37,7 +37,7 @@
 }
 
 - (void) setSelectedClues:(SelectedClues*)_selectedClues position:(NSUInteger)_position {
-    selectedClues = [_selectedClues selectedClues:_position];
+    selectedClues = [_selectedClues selectedClues:_position includeMain:TRUE];
     position = _position;
 }
 
