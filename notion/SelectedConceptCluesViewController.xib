@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectedConceptCluesViewController">
+            <connections>
+                <outlet property="carousel" destination="NXV-Bk-Z6O" id="Mvy-L6-V2r"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="AsW-eR-gsE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXV-Bk-Z6O" customClass="iCarousel">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="SDW-Rl-kNh"/>
+                        <outlet property="delegate" destination="-1" id="1U1-Wh-z7H"/>
+                    </connections>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69f-Rw-QqZ">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="UMc-R6-d3B"/>
+                        <constraint firstAttribute="height" constant="50" id="ezd-tO-OL4"/>
+                    </constraints>
+                    <state key="normal" title="Back">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="back" destination="-1" eventType="touchUpInside" id="MqA-bJ-lA7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NXV-Bk-Z6O" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4sC-4e-iy2"/>
+                <constraint firstItem="NXV-Bk-Z6O" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Cga-mu-Ggv"/>
+                <constraint firstAttribute="bottom" secondItem="NXV-Bk-Z6O" secondAttribute="bottom" id="SgI-xE-VjU"/>
+                <constraint firstItem="69f-Rw-QqZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UBS-HW-zjF"/>
+                <constraint firstItem="69f-Rw-QqZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tS0-U9-bvk"/>
+                <constraint firstAttribute="trailing" secondItem="NXV-Bk-Z6O" secondAttribute="trailing" id="wOm-HZ-bbd"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

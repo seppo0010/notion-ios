@@ -6,10 +6,16 @@
 //  Copyright (c) 2015 seppo0010. All rights reserved.
 //
 
-#import "AvailableConcept.h"
+#import "AvailableClue.h"
 #include <Ohmoc.h>
+#import <UIKit/UIKit.h>
 
-@implementation AvailableConcept
+@implementation AvailableClue
+
+static UIColor* color1;
+static UIColor* color2;
+static UIColor* color3;
+static UIColor* color4;
 
 + (void) ensureCreated {
     if ([[self all] size] == 0) {
@@ -21,7 +27,7 @@
             if (row.count < 2) {
                 continue;
             }
-            AvailableConcept* item = [self create:@{@"id": [NSNumber numberWithUnsignedInteger:++pos]}];
+            AvailableClue* item = [self create:@{@"id": [NSNumber numberWithUnsignedInteger:++pos]}];
             item.sp_names = [row objectAtIndex:0];
             [item.sp_names stringByReplacingOccurrencesOfString:@"á" withString:@"a"];
             [item.sp_names stringByReplacingOccurrencesOfString:@"é" withString:@"e"];
@@ -43,4 +49,35 @@
     }
 }
 
++ (UIColor*)colorForPosition:(NSUInteger)position {
+    if (!color1) {
+        color1 = [UIColor
+                  colorWithRed:(float)0x48 / 0xff
+                  green:(float)0x92 / 0xff
+                  blue:(float)0x9b / 0xff
+                  alpha:1.0f];
+        color2 = [UIColor
+                  colorWithRed:(float)0xE6 / 0xff
+                  green:(float)0x83 / 0xff
+                  blue:(float)0x64 / 0xff
+                  alpha:1.0f];
+        color3 = [UIColor
+                  colorWithRed:(float)0x87 / 0xff
+                  green:(float)0xD3 / 0xff
+                  blue:(float)0x7C / 0xff
+                  alpha:1.0f];
+        color4 = [UIColor
+                  colorWithRed:(float)0x8D / 0xff
+                  green:(float)0x60 / 0xff
+                  blue:(float)0x8C / 0xff
+                  alpha:1.0f];
+    }
+    switch (position) {
+        case 0: return color1;
+        case 1: return color2;
+        case 2: return color3;
+        case 3: return color4;
+    }
+    return nil;
+}
 @end

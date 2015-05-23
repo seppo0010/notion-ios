@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class SelectedConcepts;
+@class SelectedClues;
 @interface SelectedConceptListViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate> {
-    SelectedConcepts* selectedConcept;
+    SelectedClues* selectedClues;
 
     UICollectionViewFlowLayout* layout;
     IBOutlet UICollectionView* collectionView;

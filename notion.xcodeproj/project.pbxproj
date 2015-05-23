@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8D59A354445048220E596A02 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C92F132CDC0E09A7269F7511 /* libPods.a */; };
+		C91E83331B101CEB0079E7DA /* SelectedConceptCluesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91E83311B101CEB0079E7DA /* SelectedConceptCluesViewController.m */; };
+		C91E83341B101CEB0079E7DA /* SelectedConceptCluesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C91E83321B101CEB0079E7DA /* SelectedConceptCluesViewController.xib */; };
+		C91E83371B1023C00079E7DA /* SelectedConceptClueView.m in Sources */ = {isa = PBXBuildFile; fileRef = C91E83361B1023C00079E7DA /* SelectedConceptClueView.m */; };
+		C91E83391B1023EC0079E7DA /* SelectedConceptClueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C91E83381B1023EC0079E7DA /* SelectedConceptClueView.xib */; };
 		C970E8551B0FC3C50083CD71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C970E8541B0FC3C50083CD71 /* main.m */; };
 		C970E8581B0FC3C50083CD71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C970E8571B0FC3C50083CD71 /* AppDelegate.m */; };
 		C970E85B1B0FC3C50083CD71 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C970E85A1B0FC3C50083CD71 /* ViewController.m */; };
@@ -137,8 +141,8 @@
 		C982C10D1B0FDA53001CB228 /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = C982C0981B0FDA53001CB228 /* transparent.png */; };
 		C982C10E1B0FDA53001CB228 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = C982C0991B0FDA53001CB228 /* white.png */; };
 		C982C10F1B0FDA53001CB228 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = C982C09A1B0FDA53001CB228 /* yellow.png */; };
-		C982C1121B0FDDE5001CB228 /* SelectedConcepts.m in Sources */ = {isa = PBXBuildFile; fileRef = C982C1111B0FDDE5001CB228 /* SelectedConcepts.m */; };
-		C982C1151B0FE1EC001CB228 /* AvailableConcept.m in Sources */ = {isa = PBXBuildFile; fileRef = C982C1141B0FE1EC001CB228 /* AvailableConcept.m */; };
+		C982C1121B0FDDE5001CB228 /* SelectedClues.m in Sources */ = {isa = PBXBuildFile; fileRef = C982C1111B0FDDE5001CB228 /* SelectedClues.m */; };
+		C982C1151B0FE1EC001CB228 /* AvailableClue.m in Sources */ = {isa = PBXBuildFile; fileRef = C982C1141B0FE1EC001CB228 /* AvailableClue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +158,12 @@
 /* Begin PBXFileReference section */
 		0428737949FE248CE2C7201D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5D10EEC3E2D0B2FBCA6B794D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C91E83301B101CEB0079E7DA /* SelectedConceptCluesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedConceptCluesViewController.h; sourceTree = "<group>"; };
+		C91E83311B101CEB0079E7DA /* SelectedConceptCluesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedConceptCluesViewController.m; sourceTree = "<group>"; };
+		C91E83321B101CEB0079E7DA /* SelectedConceptCluesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedConceptCluesViewController.xib; sourceTree = "<group>"; };
+		C91E83351B1023C00079E7DA /* SelectedConceptClueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedConceptClueView.h; sourceTree = "<group>"; };
+		C91E83361B1023C00079E7DA /* SelectedConceptClueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedConceptClueView.m; sourceTree = "<group>"; };
+		C91E83381B1023EC0079E7DA /* SelectedConceptClueView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedConceptClueView.xib; sourceTree = "<group>"; };
 		C92F132CDC0E09A7269F7511 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C970E84F1B0FC3C50083CD71 /* notion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C970E8531B0FC3C50083CD71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -293,10 +303,10 @@
 		C982C0981B0FDA53001CB228 /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent.png; sourceTree = "<group>"; };
 		C982C0991B0FDA53001CB228 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		C982C09A1B0FDA53001CB228 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
-		C982C1101B0FDDE5001CB228 /* SelectedConcepts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedConcepts.h; sourceTree = "<group>"; };
-		C982C1111B0FDDE5001CB228 /* SelectedConcepts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedConcepts.m; sourceTree = "<group>"; };
-		C982C1131B0FE1EC001CB228 /* AvailableConcept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableConcept.h; sourceTree = "<group>"; };
-		C982C1141B0FE1EC001CB228 /* AvailableConcept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableConcept.m; sourceTree = "<group>"; };
+		C982C1101B0FDDE5001CB228 /* SelectedClues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedClues.h; sourceTree = "<group>"; };
+		C982C1111B0FDDE5001CB228 /* SelectedClues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedClues.m; sourceTree = "<group>"; };
+		C982C1131B0FE1EC001CB228 /* AvailableClue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableClue.h; sourceTree = "<group>"; };
+		C982C1141B0FE1EC001CB228 /* AvailableClue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableClue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,10 +377,10 @@
 				C970E85F1B0FC3C50083CD71 /* Images.xcassets */,
 				C970E8611B0FC3C50083CD71 /* LaunchScreen.xib */,
 				C970E8521B0FC3C50083CD71 /* Supporting Files */,
-				C982C1131B0FE1EC001CB228 /* AvailableConcept.h */,
-				C982C1141B0FE1EC001CB228 /* AvailableConcept.m */,
-				C982C1101B0FDDE5001CB228 /* SelectedConcepts.h */,
-				C982C1111B0FDDE5001CB228 /* SelectedConcepts.m */,
+				C982C1131B0FE1EC001CB228 /* AvailableClue.h */,
+				C982C1141B0FE1EC001CB228 /* AvailableClue.m */,
+				C982C1101B0FDDE5001CB228 /* SelectedClues.h */,
+				C982C1111B0FDDE5001CB228 /* SelectedClues.m */,
 				C982C0141B0FC5B9001CB228 /* SelectedConceptListViewController.h */,
 				C982C0151B0FC5B9001CB228 /* SelectedConceptListViewController.m */,
 				C982C0161B0FC5B9001CB228 /* SelectedConceptListViewController.xib */,
@@ -379,6 +389,12 @@
 				C982C01F1B0FD08C001CB228 /* SelectedConceptCollectionViewCell.h */,
 				C982C0201B0FD08C001CB228 /* SelectedConceptCollectionViewCell.m */,
 				C982C0211B0FD08C001CB228 /* SelectedConceptCollectionViewCell.xib */,
+				C91E83301B101CEB0079E7DA /* SelectedConceptCluesViewController.h */,
+				C91E83311B101CEB0079E7DA /* SelectedConceptCluesViewController.m */,
+				C91E83321B101CEB0079E7DA /* SelectedConceptCluesViewController.xib */,
+				C91E83351B1023C00079E7DA /* SelectedConceptClueView.h */,
+				C91E83361B1023C00079E7DA /* SelectedConceptClueView.m */,
+				C91E83381B1023EC0079E7DA /* SelectedConceptClueView.xib */,
 			);
 			path = notion;
 			sourceTree = "<group>";
@@ -640,6 +656,7 @@
 				C982C0CA1B0FDA53001CB228 /* 43516.png in Resources */,
 				C982C0E11B0FDA53001CB228 /* 61734.png in Resources */,
 				C982C0D51B0FDA53001CB228 /* 48781.png in Resources */,
+				C91E83391B1023EC0079E7DA /* SelectedConceptClueView.xib in Resources */,
 				C982C0E31B0FDA53001CB228 /* 62069.png in Resources */,
 				C982C0C81B0FDA53001CB228 /* 43382.png in Resources */,
 				C982C0F01B0FDA53001CB228 /* 68976.png in Resources */,
@@ -670,6 +687,7 @@
 				C982C0A31B0FDA53001CB228 /* 22314.png in Resources */,
 				C982C0A21B0FDA53001CB228 /* 21392.png in Resources */,
 				C982C0FF1B0FDA53001CB228 /* 76304.png in Resources */,
+				C91E83341B101CEB0079E7DA /* SelectedConceptCluesViewController.xib in Resources */,
 				C982C1001B0FDA53001CB228 /* 76443.png in Resources */,
 				C982C09B1B0FDA53001CB228 /* db.csv in Resources */,
 				C982C1041B0FDA53001CB228 /* background-image.png in Resources */,
@@ -795,9 +813,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C982C1121B0FDDE5001CB228 /* SelectedConcepts.m in Sources */,
+				C91E83371B1023C00079E7DA /* SelectedConceptClueView.m in Sources */,
+				C982C1121B0FDDE5001CB228 /* SelectedClues.m in Sources */,
 				C970E85B1B0FC3C50083CD71 /* ViewController.m in Sources */,
-				C982C1151B0FE1EC001CB228 /* AvailableConcept.m in Sources */,
+				C982C1151B0FE1EC001CB228 /* AvailableClue.m in Sources */,
+				C91E83331B101CEB0079E7DA /* SelectedConceptCluesViewController.m in Sources */,
 				C970E8581B0FC3C50083CD71 /* AppDelegate.m in Sources */,
 				C982C0221B0FD08C001CB228 /* SelectedConceptCollectionViewCell.m in Sources */,
 				C982C0171B0FC5B9001CB228 /* SelectedConceptListViewController.m in Sources */,

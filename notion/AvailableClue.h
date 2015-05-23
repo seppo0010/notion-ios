@@ -8,9 +8,11 @@
 
 #import "OOCModel.h"
 
-@interface AvailableConcept : OOCModel
+@class UIColor;
+@interface AvailableClue : OOCModel
 
 + (void) ensureCreated;
++ (UIColor*)colorForPosition:(NSUInteger)position;
 
 @property NSString* sp_names;
 @property NSString* en_names;

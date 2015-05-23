@@ -1,5 +1,5 @@
 //
-//  SelectedConceptCollectionViewCell.h
+//  SelectedConceptClue.h
 //  notion
 //
 //  Created by Seppo on 5/22/15.
@@ -9,12 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @class AvailableClue;
-@interface SelectedConceptCollectionViewCell : UICollectionViewCell {
+@interface SelectedConceptClueView : UIView {
     IBOutlet UITextView* names;
     IBOutlet UIImageView* image;
 }
 
-- (void)setPosition:(NSUInteger)position;
-- (void)setClue:(AvailableClue*)concept;
+- (void)setClue:(AvailableClue*)clue;
 
 @end

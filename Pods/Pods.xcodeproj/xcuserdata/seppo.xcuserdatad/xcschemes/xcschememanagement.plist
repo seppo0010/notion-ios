@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-iCarousel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-msgpack.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>696F0D2FF5C6F32BDEE4E1EC</key>
+		<key>8314FF2FF08B9CA9C0568217</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>929D2F1D28F6BEF928341BEB</key>
+		<key>9C49DCB9C8628FAAEA4630AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D51C687EA2A009112A553AAE</key>
+		<key>B4F8463E840CCED7DF3229C1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F551A49AC0C955EDA93F20F9</key>
+		<key>C2EC959672B0AF0EA4EED72C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC44615F90C63239D61C44E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -6,10 +6,11 @@
 //  Copyright (c) 2015 seppo0010. All rights reserved.
 //
 
-#import "SelectedConcepts.h"
+#import "SelectedClues.h"
 #import "SelectedConceptListViewController.h"
 #import "SelectedConceptsCollectionFlowLayout.h"
 #import "SelectedConceptCollectionViewCell.h"
+#import "SelectedConceptCluesViewController.h"
 
 @interface SelectedConceptListViewController ()
 
@@ -22,7 +23,7 @@
         layout = [[SelectedConceptsCollectionFlowLayout alloc] init];
         // TODO: replace with real data
         if (1) {
-            selectedConcept = [[SelectedConcepts alloc] initWithBase64:@"Nzg3ZjQwYThlMzA5YjgwNGI0NTkzNmM4NjEwNWE4ZjAtNC0xNy0xMC0xMC0xMF8yOV8zOV8zOF8xMTVfMy0xMTVfMTA2XzExMF84MS0yXzM0XzU4XzEwNl8xMDgtODNfMTAwXzFfMzc="];
+            selectedClues = [[SelectedClues alloc] initWithBase64:@"Nzg3ZjQwYThlMzA5YjgwNGI0NTkzNmM4NjEwNWE4ZjAtNC0xNy0xMC0xMC0xMF8yOV8zOV8zOF8xMTVfMy0xMTVfMTA2XzExMF84MS0yXzM0XzU4XzEwNl8xMDgtODNfMTAwXzFfMzc="];
         }
     }
     return self;
@@ -35,15 +36,20 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [selectedConcept numberOfConcepts];
+    return [selectedClues numberOfCategories];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)_collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     SelectedConceptCollectionViewCell *cell = (SelectedConceptCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([SelectedConceptCollectionViewCell class]) forIndexPath:indexPath];
     [cell setPosition:indexPath.row];
-    [cell setConcept:[selectedConcept mainConcept:indexPath.row]];
+    [cell setClue:[selectedClues mainClue:indexPath.row]];
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    SelectedConceptCluesViewController* controller = [[SelectedConceptCluesViewController alloc] init];
+    [controller setSelectedClues:selectedClues position:indexPath.row];
+    [self presentViewController:controller animated:YES completion:nil];
+}
 
 @end
