@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectedConceptListViewController">
             <connections>
                 <outlet property="collectionView" destination="bEX-j8-s2h" id="aAO-xk-EKe"/>
+                <outlet property="guess" destination="vxh-72-GbB" id="kVQ-RX-Ar9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,12 +17,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYX-Hv-9Nn">
-                    <rect key="frame" x="8" y="33" width="584" height="21"/>
+                    <rect key="frame" x="8" y="33" width="60" height="21"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="21" id="iFe-33-Rj2"/>
+                        <constraint firstAttribute="height" constant="21" id="Dco-ZM-y9O"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bEX-j8-s2h">
@@ -38,16 +39,29 @@
                         <outlet property="delegate" destination="-1" id="zDM-Xx-8LD"/>
                     </connections>
                 </collectionView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vxh-72-GbB">
+                    <rect key="frame" x="91" y="29" width="494" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5gR-fJ-muJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <action selector="tryGuess" destination="-1" eventType="editingDidEndOnExit" id="cdb-Nl-lWZ"/>
+                    </connections>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="IYX-Hv-9Nn" secondAttribute="trailing" constant="8" id="71r-Hm-A7s"/>
-                <constraint firstAttribute="trailing" secondItem="bEX-j8-s2h" secondAttribute="trailing" id="DSm-tx-dsq"/>
-                <constraint firstAttribute="bottom" secondItem="bEX-j8-s2h" secondAttribute="bottom" id="Mel-kU-Tai"/>
-                <constraint firstItem="IYX-Hv-9Nn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="S4t-1r-6mc"/>
-                <constraint firstItem="bEX-j8-s2h" firstAttribute="top" secondItem="IYX-Hv-9Nn" secondAttribute="bottom" constant="25" id="WVd-mv-kQF"/>
-                <constraint firstItem="bEX-j8-s2h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tl2-hm-BFg"/>
-                <constraint firstItem="IYX-Hv-9Nn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="33" id="usS-Du-81i"/>
+                <constraint firstItem="vxh-72-GbB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="29" id="0Hd-K5-S92"/>
+                <constraint firstAttribute="trailing" secondItem="bEX-j8-s2h" secondAttribute="trailing" id="TgN-dm-rRB"/>
+                <constraint firstItem="vxh-72-GbB" firstAttribute="leading" secondItem="IYX-Hv-9Nn" secondAttribute="trailing" constant="23" id="Ufc-DS-84r"/>
+                <constraint firstItem="bEX-j8-s2h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YRo-GJ-RTe"/>
+                <constraint firstItem="IYX-Hv-9Nn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="33" id="ixz-Ca-fYj"/>
+                <constraint firstAttribute="trailing" secondItem="vxh-72-GbB" secondAttribute="trailing" constant="15" id="kQt-ps-A5F"/>
+                <constraint firstAttribute="bottom" secondItem="bEX-j8-s2h" secondAttribute="bottom" id="ujK-o0-z70"/>
+                <constraint firstItem="bEX-j8-s2h" firstAttribute="top" secondItem="vxh-72-GbB" secondAttribute="bottom" constant="20" id="z8X-hU-kOr"/>
+                <constraint firstItem="IYX-Hv-9Nn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="zz9-LX-V1N"/>
             </constraints>
         </view>
     </objects>

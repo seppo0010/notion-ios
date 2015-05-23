@@ -1,5 +1,6 @@
 PODS:
   - iCarousel (1.8.1)
+  - MD5Digest (0.1.0)
   - msgpack (0.1.3)
   - objc-rlite (0.1.7)
   - ohmoc (0.1.0):
@@ -8,10 +9,12 @@ PODS:
 
 DEPENDENCIES:
   - iCarousel
+  - MD5Digest
   - ohmoc
 
 SPEC CHECKSUMS:
   iCarousel: dace1cb858e3f4dc2614bee3201041247f82feda
+  MD5Digest: 99bcccfc389c5b7a0edaf66beb80fbc7596a3b65
   msgpack: 379200c227158b5823b79ac08ff00c2150b7d6d0
   objc-rlite: cfd907413b97a890e229b9f747679106d4a5ec3c
   ohmoc: 4b0a757ceb9e35b5cc0ac2500821d540ec075786

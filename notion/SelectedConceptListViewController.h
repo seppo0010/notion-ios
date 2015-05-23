@@ -14,6 +14,10 @@
 
     UICollectionViewFlowLayout* layout;
     IBOutlet UICollectionView* collectionView;
+
+    IBOutlet UITextField* guess;
 }
+
+- (IBAction)tryGuess;
 
 @end

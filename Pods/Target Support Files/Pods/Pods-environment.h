@@ -6,6 +6,12 @@
 // project.
 
 
+// MD5Digest
+#define COCOAPODS_POD_AVAILABLE_MD5Digest
+#define COCOAPODS_VERSION_MAJOR_MD5Digest 0
+#define COCOAPODS_VERSION_MINOR_MD5Digest 1
+#define COCOAPODS_VERSION_PATCH_MD5Digest 0
+
 // iCarousel
 #define COCOAPODS_POD_AVAILABLE_iCarousel
 #define COCOAPODS_VERSION_MAJOR_iCarousel 1

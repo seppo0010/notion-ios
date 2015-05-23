@@ -8,6 +8,7 @@
 
 #import "SelectedClues.h"
 #import "AvailableClue.h"
+#import "NSString+MD5.h"
 
 @implementation SelectedClues
 
@@ -90,6 +91,10 @@ NSString* subSeparator = @"_";
         [clues addObject:[AvailableClue get:selectedId]];
     }
     return [clues copy];
+}
+
+- (BOOL)tryGuess:(NSString*)guess {
+    return [[[[[guess lowercaseString] stringByReplacingOccurrencesOfString:@" " withString:@""] MD5Digest] lowercaseString] isEqualToString:[self.answer lowercaseString]];
 }
 
 @end

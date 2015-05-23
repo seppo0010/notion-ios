@@ -20,6 +20,7 @@
 - (AvailableClue*)mainClue:(NSUInteger)position;
 
 - (NSArray*)selectedClues:(NSUInteger)position;
+- (BOOL)tryGuess:(NSString*)guess;
 
 @property NSString* answer;
 @property int main1;

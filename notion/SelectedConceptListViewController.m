@@ -33,6 +33,7 @@
     [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([SelectedConceptCollectionViewCell class]) bundle:[NSBundle mainBundle]]forCellWithReuseIdentifier:NSStringFromClass([SelectedConceptCollectionViewCell class])];
     collectionView.collectionViewLayout = layout;
     collectionView.indicatorStyle = UIScrollViewIndicatorStyleWhite;
+    guess.hidden = selectedClues.answer.length == 0;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -50,6 +51,11 @@
     SelectedConceptCluesViewController* controller = [[SelectedConceptCluesViewController alloc] init];
     [controller setSelectedClues:selectedClues position:indexPath.row];
     [self presentViewController:controller animated:YES completion:nil];
+}
+
+- (IBAction)tryGuess {
+    BOOL correct = [selectedClues tryGuess:guess.text];
+    [[[UIAlertView alloc] initWithTitle:correct ? @"Correct" : @"Incorrect :(" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
 }
 
 @end
