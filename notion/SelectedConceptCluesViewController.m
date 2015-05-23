@@ -42,7 +42,7 @@
 }
 
 - (IBAction)back {
-    [self dismissViewControllerAnimated:TRUE completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end

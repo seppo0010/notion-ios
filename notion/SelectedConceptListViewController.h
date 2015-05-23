@@ -18,6 +18,7 @@
     IBOutlet UITextField* guess;
 }
 
+- (instancetype) initWithBase64Clue:(NSString*)clue;
 - (IBAction)tryGuess;
 
 @end

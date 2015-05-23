@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AvailableClue.h"
+#import "SelectedConceptListViewController.h"
 #include <Ohmoc.h>
 
 @interface AppDelegate ()
@@ -20,8 +21,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [Ohmoc createWithDocumentFilename:@"data.rld"];
     [AvailableClue ensureCreated];
-    // Override point for customization after application launch.
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return TRUE;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

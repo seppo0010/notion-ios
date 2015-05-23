@@ -51,7 +51,7 @@
                     </connections>
                 </textField>
             </subviews>
-            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="vxh-72-GbB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="29" id="0Hd-K5-S92"/>
                 <constraint firstAttribute="trailing" secondItem="bEX-j8-s2h" secondAttribute="trailing" id="TgN-dm-rRB"/>
