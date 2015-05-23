@@ -42,6 +42,19 @@ NSString* subSeparator = @"_";
     return numberOfCategories;
 }
 
+- (NSUInteger)positionForIndexPathRow:(NSUInteger)indexPathRow {
+    NSUInteger numberOfCategories = 0;
+    if (self.main1 || self.selected1.length > 0) numberOfCategories++;
+    if (indexPathRow < numberOfCategories) return 0;
+    if (self.main2 || self.selected2.length > 0) numberOfCategories++;
+    if (indexPathRow < numberOfCategories) return 1;
+    if (self.main3 || self.selected3.length > 0) numberOfCategories++;
+    if (indexPathRow < numberOfCategories) return 2;
+    if (self.main4 || self.selected4.length > 0) numberOfCategories++;
+    if (indexPathRow < numberOfCategories) return 3;
+    return 0;
+}
+
 - (AvailableClue*)clueById:(int)conceptId {
     if (conceptId == 0) {
         return nil;
@@ -90,7 +103,9 @@ NSString* subSeparator = @"_";
     }
 
     for (id selectedId in selected) {
-        [clues addObject:[AvailableClue get:selectedId]];
+        if ([selectedId intValue]) {
+            [clues addObject:[AvailableClue get:selectedId]];
+        }
     }
     return [clues copy];
 }

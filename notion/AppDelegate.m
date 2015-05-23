@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "AvailableClue.h"
 #import "SelectedConceptListViewController.h"
+#import "ViewController.h"
 #include <Ohmoc.h>
 
 @interface AppDelegate ()
@@ -25,6 +26,10 @@
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    UINavigationController* navigationController = (UINavigationController*)application.keyWindow.rootViewController;
+    ViewController* controller = [[navigationController viewControllers] objectAtIndex:0];
+    controller.clue = url.host;
+    [navigationController popToRootViewControllerAnimated:NO];
     return TRUE;
 }
 

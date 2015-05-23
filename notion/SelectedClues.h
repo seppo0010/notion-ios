@@ -13,6 +13,8 @@
 
 - (instancetype)initWithBase64:(NSString*)base64;
 - (NSUInteger) numberOfCategories;
+- (NSUInteger)positionForIndexPathRow:(NSUInteger)indexPathRow;
+
 - (AvailableClue*)mainClue1;
 - (AvailableClue*)mainClue2;
 - (AvailableClue*)mainClue3;

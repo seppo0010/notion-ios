@@ -10,7 +10,10 @@
 
 @interface ViewController : UIViewController {
     UIViewController* controller;
+    NSString* _clue;
 }
+
+@property NSString* clue;
 
 @end
 

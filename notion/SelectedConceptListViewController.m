@@ -40,15 +40,17 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)_collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     SelectedConceptCollectionViewCell *cell = (SelectedConceptCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([SelectedConceptCollectionViewCell class]) forIndexPath:indexPath];
-    [cell setPosition:indexPath.row];
-    [cell setMainClue:[selectedClues mainClue:indexPath.row]];
-    [cell setClues:[selectedClues selectedClues:indexPath.row includeMain:FALSE]];
+    NSUInteger position = [selectedClues positionForIndexPathRow:indexPath.row];
+    [cell setPosition:position];
+    [cell setMainClue:[selectedClues mainClue:position]];
+    [cell setClues:[selectedClues selectedClues:position includeMain:FALSE]];
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     SelectedConceptCluesViewController* controller = [[SelectedConceptCluesViewController alloc] init];
-    [controller setSelectedClues:selectedClues position:indexPath.row];
+    NSUInteger position = [selectedClues positionForIndexPathRow:indexPath.row];
+    [controller setSelectedClues:selectedClues position:position];
     [self.navigationController pushViewController:controller animated:YES];
 }
 
