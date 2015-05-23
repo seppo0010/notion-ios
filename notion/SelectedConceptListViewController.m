@@ -56,7 +56,14 @@
 
 - (IBAction)tryGuess {
     BOOL correct = [selectedClues tryGuess:guess.text];
-    [[[UIAlertView alloc] initWithTitle:correct ? @"Correct" : @"Incorrect :(" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:correct ? @"Correct" : @"Incorrect :(" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
+    [alert show];
+
+    int64_t delayInSeconds = 0.9;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [alert dismissWithClickedButtonIndex:0 animated:YES];
+    });
 }
 
 @end
