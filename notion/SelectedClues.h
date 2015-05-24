@@ -8,6 +8,12 @@
 
 #import "OOCModel.h"
 
+typedef enum ClueStatus {
+    ClueStatusUnselected,
+    ClueStatusSelected,
+    ClueStatusMain
+} ClueStatus;
+
 @class AvailableClue;
 @interface SelectedClues : OOCModel
 
@@ -20,9 +26,13 @@
 - (AvailableClue*)mainClue3;
 - (AvailableClue*)mainClue4;
 - (AvailableClue*)mainClue:(NSUInteger)position;
+- (void)setMainClue:(AvailableClue*)clue position:(NSUInteger)position;
+
+- (ClueStatus)statusForClue:(AvailableClue*)clue position:(NSUInteger)position;
 
 - (NSArray*)selectedClues:(NSUInteger)position includeMain:(BOOL)includeMain;
 - (BOOL)tryGuess:(NSString*)guess;
+- (ClueStatus)toggleClue:(AvailableClue*)clue position:(NSUInteger)position;
 
 @property NSString* answer;
 @property int main1;

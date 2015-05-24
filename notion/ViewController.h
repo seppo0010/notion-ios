@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController {
-    UIViewController* controller;
     NSString* _clue;
 }
 

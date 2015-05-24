@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SelectedConceptListViewController.h"
+#import "EditConceptViewController.h"
 
 @interface ViewController ()
 
@@ -23,9 +24,7 @@
 }
 
 - (void) viewModeAnimated:(BOOL)animated {
-    if (!controller) {
-        controller = [[SelectedConceptListViewController alloc] initWithBase64Clue:self.clue];
-    }
+    SelectedConceptListViewController* controller = [[SelectedConceptListViewController alloc] initWithBase64Clue:self.clue];
     [self.navigationController pushViewController:controller animated:animated];
 }
 
@@ -34,13 +33,13 @@
 }
 
 - (IBAction)editMode {
-    
+    EditConceptViewController* controller = [[EditConceptViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:TRUE];
 }
 
 
 - (void)setClue:(NSString *)clue {
     _clue = clue;
-    controller = nil;
 }
 
 - (NSString*)clue {

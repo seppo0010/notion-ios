@@ -8,7 +8,6 @@
 
 #import "SelectedClues.h"
 #import "SelectedConceptListViewController.h"
-#import "SelectedConceptsCollectionFlowLayout.h"
 #import "SelectedConceptCollectionViewCell.h"
 #import "SelectedConceptCluesViewController.h"
 
@@ -20,7 +19,12 @@
 
 - (instancetype) initWithBase64Clue:(NSString*)clue {
     if (self = [super init]) {
-        layout = [[SelectedConceptsCollectionFlowLayout alloc] init];
+        layout = [[UICollectionViewFlowLayout alloc] init];
+        layout.itemSize = CGSizeMake(172.0f, 180.0f);
+        layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+        layout.minimumInteritemSpacing = 10.0f;
+        layout.minimumLineSpacing = 10.0f;
+
         selectedClues = [[SelectedClues alloc] initWithBase64:clue];
     }
     return self;
