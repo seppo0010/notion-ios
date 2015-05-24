@@ -7,8 +7,7 @@
         <!--Navigation Controller-->
         <scene sceneID="2Dz-I5-Oxn">
             <objects>
-                <navigationController navigationBarHidden="YES" id="TNa-cF-Xfw" sceneMemberID="viewController">
-                    <nil key="simulatedTopBarMetrics"/>
+                <navigationController id="TNa-cF-Xfw" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZcR-R6-3Id">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -32,13 +31,33 @@
                     <view key="view" contentMode="scaleToFill" id="eTL-G1-z03">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoP-dJ-COg">
+                                <rect key="frame" x="16" y="91" width="76" height="30"/>
+                                <state key="normal" title="View Mode">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewMode" destination="ZJb-7v-9Vf" eventType="touchUpInside" id="zYO-fV-p49"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJw-5F-DIW">
+                                <rect key="frame" x="16" y="129" width="71" height="30"/>
+                                <state key="normal" title="Edit Mode">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="editMode" destination="ZJb-7v-9Vf" eventType="touchUpInside" id="faw-IW-iYp"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Odv-RW-cDw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="arj-ge-OZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-29" y="89"/>
+            <point key="canvasLocation" x="-115" y="53"/>
         </scene>
     </scenes>
 </document>

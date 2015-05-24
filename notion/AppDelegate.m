@@ -30,6 +30,7 @@
     ViewController* controller = [[navigationController viewControllers] objectAtIndex:0];
     controller.clue = url.host;
     [navigationController popToRootViewControllerAnimated:NO];
+    [controller viewModeAnimated:NO];
     return TRUE;
 }
 

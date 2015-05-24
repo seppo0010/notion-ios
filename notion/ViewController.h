@@ -13,7 +13,10 @@
     NSString* _clue;
 }
 
+- (void) viewModeAnimated:(BOOL)animated;
+- (IBAction)viewMode;
+- (IBAction)editMode;
+
 @property NSString* clue;
 
 @end
-
